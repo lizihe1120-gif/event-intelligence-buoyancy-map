@@ -1,6 +1,8 @@
-> 内容过大，完整 GitHub 仓库链接：https://github.com/lizihe1120-gif/event-intelligence-buoyancy-map
-
-演示视频将在录制完成后上传至仓库的 [`outputs/event-intelligence-web/`](https://github.com/lizihe1120-gif/event-intelligence-buoyancy-map/tree/main/outputs/event-intelligence-web/) 目录。
+> 提交附件内容较大，完整源码、演示数据与验证材料见 [GitHub 仓库](https://github.com/lizihe1120-gif/event-intelligence-buoyancy-map)。
+>
+> 在线演示：[https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/](https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/)
+>
+> 演示视频：尚未生成；录制完成后将放入 [`outputs/event-intelligence-web/`](https://github.com/lizihe1120-gif/event-intelligence-buoyancy-map/tree/main/outputs/event-intelligence-web/) 目录。
 
 # 事件浮力图
 
