@@ -1,6 +1,8 @@
 > 提交附件内容较大，完整源码、演示数据与验证材料见 [GitHub 仓库](https://github.com/lizihe1120-gif/event-intelligence-buoyancy-map)。
 >
 > 在线演示：[https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/](https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/)
+>
+> 演示视频：[event-intelligence-demo.mp4](outputs/event-intelligence-web/event-intelligence-demo.mp4)（101.2 秒，1440×900，中文字幕）。
 # 事件浮力图
 
 > 用一张可回看的证据—事件—公司关系图，帮助投资者看清同一事件从最初线索到正式落地的变化、当前状态与受影响标的。
@@ -208,7 +210,7 @@ outputs/event-intelligence-web/
   snapshot-2024-09-03-1440x900.png
   snapshot-2024-09-19-1440x900.png
   snapshot-2025-09-16-1440x900.png
-  event-intelligence-demo.mp4      # 演示成片目标路径；当前文档阶段尚未生成
+  event-intelligence-demo.mp4      # 101.2 秒中文字幕演示成片
 ```
 
 ## 安装与本地运行
@@ -268,7 +270,7 @@ npm run build --workspace @event-intelligence/web
 
 - AI 使用与验证记录：`docs/AI_USAGE_AND_VALIDATION.md`
 - 演示脚本与镜头表：`docs/event-intelligence-demo-script.md`
-- 演示视频目标位置：`outputs/event-intelligence-web/event-intelligence-demo.mp4`
+- 演示视频：[`outputs/event-intelligence-web/event-intelligence-demo.mp4`](outputs/event-intelligence-web/event-intelligence-demo.mp4)
 
 ## 已知边界与未实现事项
 
@@ -283,7 +285,7 @@ npm run build --workspace @event-intelligence/web
 - 后台任务和实时行情；
 - 移动端。
 
-第一至第七阶段已经执行；独立仓库、GitHub Actions 与公网部署已经完成。演示视频仍待生成，当前仓库只保留脚本和目标路径，不声称 MP4 已完成。
+第一至第七阶段已经执行；独立仓库、GitHub Actions、公网部署与 101.2 秒中文字幕演示视频已经完成。
 
 ## 投资与合规声明
 
