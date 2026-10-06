@@ -3,6 +3,13 @@
 > 在线演示：[https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/](https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/)
 >
 > 演示视频：[event-intelligence-demo.mp4](outputs/event-intelligence-web/event-intelligence-demo.mp4)（101.2 秒，1440×900，中文字幕）。
+
+<a href="outputs/event-intelligence-web/event-intelligence-demo.mp4">
+  <img src="outputs/event-intelligence-web/event-intelligence-demo-preview.gif" alt="事件浮力图演示：1.5 倍速循环预览" width="100%">
+</a>
+
+<p align="center"><sub>1.5 倍速循环预览；点击画面查看 101.2 秒高清演示视频。</sub></p>
+
 # 事件浮力图
 
 > 用一张可回看的证据—事件—公司关系图，帮助投资者看清同一事件从最初线索到正式落地的变化、当前状态与受影响标的。
