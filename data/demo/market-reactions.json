@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-10-05T16:18:00+08:00",
+  "event_id": "evt-main-cssc-csic-merger",
+  "disclosure_anchor": "2024-09-18T18:00:00+08:00",
+  "market_reaction_status": "reaction_then_pullback",
+  "status_note": "预案盘后披露，9月19日复牌出现分化，9月20日两家合并主体均明显回撤。事件已确认不能等同于市场一致正面定价。",
+  "frequency": "daily",
+  "minute_data_status": "unavailable",
+  "minute_data_note": "iFinD/扶摇不可用；公开接口未获得可验证分钟数据，因此采用披露前最后交易日、复牌日和复牌后一交易日。",
+  "benchmark": {
+    "name": "上证综指",
+    "ticker": "000001.SS",
+    "source": "Yahoo Finance chart API",
+    "limitations": "成交量字段为供应商口径，不与个股股数直接比较；仅用收盘点位计算同期收益。"
+  },
+  "formulae": {
+    "return_pct": "(current_close / previous_close - 1) * 100",
+    "excess_vs_benchmark_pp": "company_return_pct - benchmark_return_pct",
+    "volume_ratio": "current_volume / previous_observed_trading_day_volume",
+    "turnover_amount_ratio": "current_turnover_amount / previous_observed_trading_day_turnover_amount"
+  },
+  "observations": [
+    {
+      "observation_id": "mktobs-cssc-resumption-20240919",
+      "company_id": "cmp-cssc",
+      "window": "last_trading_day_before_suspension_to_first_resumption_day",
+      "before": {"date": "2024-09-02", "close_cny": 34.9, "volume_shares": 90845488},
+      "after": {"date": "2024-09-19", "close_cny": 36.06, "volume_shares": 113655453},
+      "benchmark": {"before_close": 2717.281, "after_close": 2736.022, "return_pct": 0.69, "note": "因个股停牌，基准比较采用预案披露日9月18日收盘至复牌日9月19日收盘。"},
+      "calculated": {"return_pct": 3.32, "excess_vs_benchmark_pp": 2.63, "volume_ratio": 1.25},
+      "reaction_label": "initial_reaction",
+      "interpretation": "复牌日观察到收盘价和成交量上升，但不能据此证明合并创造了确定价值。"
+    },
+    {
+      "observation_id": "mktobs-cssc-pullback-20240920",
+      "company_id": "cmp-cssc",
+      "window": "first_to_second_resumption_day",
+      "before": {"date": "2024-09-19", "close_cny": 36.06, "volume_shares": 113655453},
+      "after": {"date": "2024-09-20", "close_cny": 33.88, "volume_shares": 85317930},
+      "benchmark": {"before_close": 2736.022, "after_close": 2736.814, "return_pct": 0.03},
+      "calculated": {"return_pct": -6.05, "excess_vs_benchmark_pp": -6.08, "volume_ratio": 0.75},
+      "reaction_label": "reaction_then_pullback",
+      "interpretation": "次日明显回撤，显示首日正反应没有持续。"
+    },
+    {
+      "observation_id": "mktobs-csic-resumption-20240919",
+      "company_id": "cmp-csic",
+      "window": "last_trading_day_before_suspension_to_first_resumption_day",
+      "before": {"date": "2024-09-02", "close_cny": 4.98, "turnover_amount_cny": 1121000000},
+      "after": {"date": "2024-09-19", "close_cny": 4.86, "volume_shares": 448830000, "turnover_amount_cny": 2170000000},
+      "benchmark": {"before_close": 2717.281, "after_close": 2736.022, "return_pct": 0.69, "note": "基准同样采用9月18日至9月19日。"},
+      "calculated": {"return_pct": -2.41, "excess_vs_benchmark_pp": -3.1, "turnover_amount_ratio": 1.94},
+      "reaction_label": "significant_reaction",
+      "interpretation": "复牌日价格下跌且成交额约为停牌前最后交易日的1.94倍，属于显著但方向偏负的市场反应。"
+    },
+    {
+      "observation_id": "mktobs-csic-pullback-20240920",
+      "company_id": "cmp-csic",
+      "window": "first_to_second_resumption_day",
+      "before": {"date": "2024-09-19", "close_cny": 4.86},
+      "after": {"date": "2024-09-20", "close_cny": 4.5},
+      "benchmark": {"before_close": 2736.022, "after_close": 2736.814, "return_pct": 0.03},
+      "calculated": {"return_pct": -7.41, "excess_vs_benchmark_pp": -7.44},
+      "reaction_label": "reaction_then_pullback",
+      "interpretation": "第二个交易日进一步回撤；同花顺龙虎榜记录收盘4.50元，经济观察网记录中船系领跌。"
+    },
+    {
+      "observation_id": "mktobs-power-main-plan-20240919",
+      "company_id": "cmp-power",
+      "window": "plan_disclosure_day_to_next_trading_day",
+      "before": {"date": "2024-09-18", "close_cny": 23.35, "volume_shares": 14390366},
+      "after": {"date": "2024-09-19", "close_cny": 22.09, "volume_shares": 25429878},
+      "benchmark": {"before_close": 2717.281, "after_close": 2736.022, "return_pct": 0.69},
+      "calculated": {"return_pct": -5.4, "excess_vs_benchmark_pp": -6.09, "volume_ratio": 1.77},
+      "reaction_label": "significant_reaction",
+      "interpretation": "第三家公司在正式预案披露后的次日放量下跌；它说明板块早期上涨没有持续，但不能单独归因于主合并。"
+    }
+  ],
+  "data_sources": [
+    {
+      "name": "Yahoo Finance chart API",
+      "usage": "600150、600482、000001.SS的复牌窗口日线收盘价和成交量",
+      "retrieved_at": "2026-10-05T14:50:00+08:00",
+      "raw_endpoint_pattern": "https://query1.finance.yahoo.com/v8/finance/chart/{symbol}?period1=...&period2=...&interval=1d&events=history"
+    },
+    {
+      "name": "新浪财经复牌首日新闻",
+      "url": "https://finance.sina.cn/2024-09-19/detail-incpstrq8146429.d.html",
+      "usage": "中国重工9月19日收盘、成交量和成交额，以及停牌前成交额对照"
+    },
+    {
+      "name": "同花顺龙虎榜历史数据",
+      "url": "https://data.10jqka.com.cn/market/lhbgg/code/601989/date/2025-08-06/rid/3/",
+      "usage": "中国重工2024-09-20收盘价4.50元"
+    },
+    {
+      "name": "经济观察网",
+      "url": "https://www.eeo.com.cn/2024/0920/688108.shtml",
+      "usage": "复牌第二日上证综指微涨而中船系领跌的交叉核验"
+    }
+  ],
+  "limitations": [
+    "601989.SS已退市，Yahoo Finance当前接口返回404，故其历史行情采用当时新闻和龙虎榜数据交叉核验。",
+    "两家主体在9月3日至9月18日停牌，无法计算公告后5分钟、30分钟和4小时窗口。",
+    "未取得申万航海装备II指数逐日原始序列；用上证综指作基准，并保留行业分离不足的限制。",
+    "市场反应描述为相关时间上的观察，不作因果断言。"
+  ]
+}

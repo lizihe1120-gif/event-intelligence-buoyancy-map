@@ -1,0 +1,130 @@
+{
+  "run_id": "material-analysis-001",
+  "cluster_count": 4,
+  "assignment_method": "以已封板结构化event_id和事件版本source_ids构建相似度图，再以公司、事件类型、实体数字与时间承接作确定性核验；不使用固定K。",
+  "clusters": [
+    {
+      "cluster_id": "cluster-001",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "source_ids": [
+        "src-001",
+        "src-002",
+        "src-003",
+        "src-004",
+        "src-005",
+        "src-006",
+        "src-007",
+        "src-008",
+        "src-009",
+        "src-010",
+        "src-011",
+        "src-012",
+        "src-016",
+        "src-017"
+      ],
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic",
+        "cmp-power"
+      ],
+      "clustering_reasons": [
+        "结构化event_id共同指向evt-main-cssc-csic-merger",
+        "关联公司集合：cmp-cssc、cmp-csic、cmp-power",
+        "事件类型：stock_swap_absorption_merger",
+        "版本来源、关键实体与数字在时间线上连续承接"
+      ],
+      "confidence": 0.98,
+      "diagnostics": {
+        "cohesion": 0.053,
+        "structured_link_coverage": 1
+      }
+    },
+    {
+      "cluster_id": "cluster-002",
+      "event_id": "evt-aux-power-rights-change",
+      "event_title": "主合并触发中国动力权益承继变化",
+      "source_ids": [
+        "src-008",
+        "src-011",
+        "src-012"
+      ],
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic",
+        "cmp-power"
+      ],
+      "clustering_reasons": [
+        "结构化event_id共同指向evt-aux-power-rights-change",
+        "关联公司集合：cmp-cssc、cmp-csic、cmp-power",
+        "事件类型：shareholding_rights_succession",
+        "版本来源、关键实体与数字在时间线上连续承接"
+      ],
+      "confidence": 0.93,
+      "diagnostics": {
+        "cohesion": 0.079,
+        "structured_link_coverage": 0.667
+      }
+    },
+    {
+      "cluster_id": "cluster-003",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "source_ids": [
+        "src-013",
+        "src-014",
+        "src-018"
+      ],
+      "company_ids": [
+        "cmp-power",
+        "cmp-cssc"
+      ],
+      "clustering_reasons": [
+        "结构化event_id共同指向evt-aux-power-diesel-acquisition",
+        "关联公司集合：cmp-power、cmp-cssc",
+        "事件类型：related_party_asset_acquisition",
+        "版本来源、关键实体与数字在时间线上连续承接"
+      ],
+      "confidence": 0.98,
+      "diagnostics": {
+        "cohesion": 0.093,
+        "structured_link_coverage": 1
+      }
+    },
+    {
+      "cluster_id": "cluster-004",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "source_ids": [
+        "src-002",
+        "src-012",
+        "src-015"
+      ],
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic"
+      ],
+      "clustering_reasons": [
+        "结构化event_id共同指向evt-aux-cssc-noncompete-change",
+        "关联公司集合：cmp-cssc、cmp-csic",
+        "事件类型：commitment_change",
+        "版本来源、关键实体与数字在时间线上连续承接"
+      ],
+      "confidence": 0.87,
+      "diagnostics": {
+        "cohesion": 0.053,
+        "structured_link_coverage": 0.333
+      }
+    }
+  ],
+  "silhouette_coefficient": {
+    "value": -0.002,
+    "method": "基于规范化标题与摘录的二元组Jaccard距离，对结构化聚类结果做近似诊断",
+    "role": "diagnostic_only",
+    "used_for_deduplication": false,
+    "used_for_cluster_assignment": false,
+    "selected_k_by_metric": false,
+    "limitation": "部分来源同时服务主事件与辅助事件，诊断采用每份来源的首个结构化归属，数值不用于改变4个业务事件簇。"
+  },
+  "elapsed_ms": 3
+}

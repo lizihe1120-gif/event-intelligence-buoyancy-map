@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-05T16:18:00+08:00",
+  "security_note": "本文件不含密钥、Cookie、授权头或个人信息。时间为本次采集会话的近似记录。",
+  "availability": [
+    {
+      "tool": "iFinD MCP",
+      "available": false,
+      "checked_at": "2026-10-05T14:05:00+08:00",
+      "reason": "当前会话未暴露iFinD MCP工具，环境变量和项目配置中也未发现可调用入口。"
+    },
+    {
+      "tool": "扶摇",
+      "available": false,
+      "checked_at": "2026-10-05T14:05:00+08:00",
+      "reason": "当前会话未暴露扶摇行情/财务工具，环境中未发现可调用入口。"
+    },
+    {
+      "tool": "公开网页搜索",
+      "available": true,
+      "checked_at": "2026-10-05T14:10:00+08:00"
+    },
+    {
+      "tool": "PowerShell + Yahoo Finance公开chart API",
+      "available": true,
+      "checked_at": "2026-10-05T14:50:00+08:00",
+      "limitations": "已退市的601989.SS返回404。"
+    }
+  ],
+  "calls": [
+    {
+      "call_id": "call-001",
+      "tool": "filesystem_and_rg",
+      "called_at": "2026-10-05T14:03:00+08:00",
+      "query": "检查项目结构、AGENTS.md、数据目录、Git状态和iFinD/扶摇线索",
+      "result": "未发现统一demo数据目录；未发现iFinD/扶摇入口；现有页面代码未修改。",
+      "status": "success",
+      "source_ids": []
+    },
+    {
+      "call_id": "call-002",
+      "tool": "web_search",
+      "called_at": "2026-10-05T14:10:00+08:00",
+      "query": "候选事件：中国船舶/中国重工、国泰君安/海通证券、A股重大重组澄清终止",
+      "result": "两船合并材料类型最完整且版本跨度清晰，选为主事件。",
+      "status": "success",
+      "source_ids": ["src-003", "src-005", "src-009"]
+    },
+    {
+      "call_id": "call-003",
+      "tool": "web_search",
+      "called_at": "2026-10-05T14:18:00+08:00",
+      "query": "中国船舶 中国重工 合并传闻、停牌、预案、终止上市",
+      "result": "找到2019年市场叙事、2024年停牌/预案与2025年实施材料。",
+      "status": "success",
+      "source_ids": ["src-001", "src-003", "src-006", "src-011"]
+    },
+    {
+      "call_id": "call-004",
+      "tool": "web_search",
+      "called_at": "2026-10-05T14:24:00+08:00",
+      "query": "同业竞争承诺、专家观点、研报观点、中国动力持股关系",
+      "result": "找到2021年承诺、第一财经专家采访、开源证券研报摘要和中国动力权益关系。",
+      "status": "success",
+      "source_ids": ["src-002", "src-004", "src-005", "src-008"]
+    },
+    {
+      "call_id": "call-005",
+      "tool": "eastmoney_public_api_via_web",
+      "called_at": "2026-10-05T14:33:00+08:00",
+      "query": "600150/601989/600482/000001 2024-09复牌窗口日线",
+      "result": "接口URL不被网页读取工具允许。",
+      "status": "failed",
+      "failure_reason": "URL not accessible via web tool",
+      "source_ids": []
+    },
+    {
+      "call_id": "call-006",
+      "tool": "eastmoney_public_api_via_powershell",
+      "called_at": "2026-10-05T14:35:00+08:00",
+      "query": "同一日线窗口",
+      "result": "沙箱内socket被禁止；获准联网后仍发生SSL连接错误。",
+      "status": "failed",
+      "failure_reason": "socket permission then SSL connection failure",
+      "source_ids": []
+    },
+    {
+      "call_id": "call-007",
+      "tool": "yahoo_finance_chart_api",
+      "called_at": "2026-10-05T14:43:00+08:00",
+      "query": "600150.SS/601989.SS/600482.SS/000001.SS 2024-09日线",
+      "result": "首次URL因PowerShell变量边界问题产生404；修正后600150、600482、000001成功，601989因退市仍404。",
+      "status": "partial_success",
+      "source_ids": []
+    },
+    {
+      "call_id": "call-008",
+      "tool": "yahoo_finance_chart_api",
+      "called_at": "2026-10-05T14:50:00+08:00",
+      "query": "停牌前最后交易日600150、600482、上证综指数据",
+      "result": "成功取得2024-09-02收盘与成交量，用于复牌窗口计算。",
+      "status": "success",
+      "source_ids": []
+    },
+    {
+      "call_id": "call-009",
+      "tool": "web_search",
+      "called_at": "2026-10-05T14:52:00+08:00",
+      "query": "中国重工2024-09-19与09-20收盘、成交量、成交额",
+      "result": "以当日新闻、同花顺龙虎榜和市场综述补齐已退市代码的数据。",
+      "status": "success",
+      "source_ids": ["src-007"]
+    },
+    {
+      "call_id": "call-010",
+      "tool": "web_search",
+      "called_at": "2026-10-05T14:54:00+08:00",
+      "query": "证监会注册、终止上市、换股实施结果、新增股份上市",
+      "result": "确认2025-07-18注册、09-05终止上市、09-11登记、09-16新增股份上市。",
+      "status": "success",
+      "source_ids": ["src-010", "src-011", "src-012"]
+    },
+    {
+      "call_id": "call-011",
+      "tool": "web_search_and_open",
+      "called_at": "2026-10-05T14:56:00+08:00",
+      "query": "中国动力购买中船柴油机16.5136%股权及终止公告",
+      "result": "找到交易草案和2025-09-13终止公告，后者完整列出进程和终止原因。",
+      "status": "success",
+      "source_ids": ["src-013", "src-014"]
+    },
+    {
+      "call_id": "call-012",
+      "tool": "web_open_pdf",
+      "called_at": "2026-10-05T15:22:00+08:00",
+      "query": "核验中国动力《关于股东权益变动的提示性公告》1222431584.PDF",
+      "result": "确认公告标题、454,731,000股承继关系、控股股东与实际控制人不变，以及公司对日常经营影响的判断；据此替换错误的src-008链接与元数据。",
+      "status": "success",
+      "source_ids": ["src-008"]
+    },
+    {
+      "call_id": "call-013",
+      "tool": "web_search",
+      "called_at": "2026-10-05T15:48:00+08:00",
+      "query": "核验中国船舶、中国重工和中国动力与演示事件相关的停牌、复牌及终止上市日期",
+      "result": "确认两家合并主体2024-09停复牌窗口、中国重工2025-08-13起连续停牌及09-05终止上市、中国动力2024-10-28停牌及11-11复牌。",
+      "status": "success",
+      "source_ids": ["src-003", "src-006", "src-007", "src-011", "src-014", "src-016"]
+    },
+    {
+      "call_id": "call-014",
+      "tool": "web_search",
+      "called_at": "2026-10-05T16:12:00+08:00",
+      "query": "核验中国动力2024-10-25及中国重工2025-08-12停牌前最后收盘价",
+      "result": "中国动力官方交易材料确认2024-10-25收盘23.56元；中国重工第三方历史行情显示2025-08-12收盘5.10元，最后交易日日期由公司公告交叉确认。",
+      "status": "success",
+      "source_ids": ["src-016", "src-017", "src-018"]
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-10-05T16:18:00+08:00",
+  "analysis_run": {
+    "run_id": "material-analysis-001",
+    "analysis_type": "ai_assisted_source_analysis",
+    "model_name": "unknown",
+    "prompt_version": "material-analysis-v1",
+    "generated_at": "2026-10-05T16:18:00+08:00",
+    "validated_at": "2026-10-05T16:28:01+08:00",
+    "validation_status": "reviewed",
+    "validation_notes": [
+      "18份来源与18条逐来源分析已按source_id进行一一对应检查。",
+      "src-008原链接与标题不匹配，已修复为中国动力第一手公告《关于股东权益变动的提示性公告》，document_id为1222431584。",
+      "换股比例由预案1:0.1335变化为最终实施1:0.1339的关系已由corrects调整为updates，表示后续实施参数替代预案参数，不表示原披露错误。",
+      "事件确认状态与执行状态已拆分为confirmation_status和execution_status。",
+      "停牌、复牌、连续停牌和终止上市已在公司交易状态历史中分别建模。",
+      "中国证监会同意注册节点使用中国证监会官方来源src-010核验。",
+      "中国重工终止上市节点使用上海证券交易所官方来源src-011核验。",
+      "中国动力2024-10-28停牌与2024-11-11复牌使用公司公告src-014核验。",
+      "中国船舶、中国动力及上证综指的2024年事件窗口日线收盘价和成交量或点位来自Yahoo Finance；相应计算和来源限制记录在market-reactions.json。",
+      "中国重工退市后Yahoo Finance当前接口无法返回数据；2025-08-12最后交易价使用非第一手历史行情src-017，连续停牌和终止上市分别以src-016、src-011核验。",
+      "src-017为Investing.com历史行情页面，不是公司、交易所或监管机构第一手来源。",
+      "src-018为中国动力披露的交易独立财务顾问核查文件，用于核验2024-10-25停牌前最后收盘价。",
+      "iFinD和扶摇在当前环境不可用，未使用或虚构其返回结果。",
+      "开源证券仅取得可访问的研报摘要，未取得完整研报正文，未扩展引用其目标价或完整模型。",
+      "公告后5分钟、30分钟、4小时的分钟行情和完整行业指数序列仍然缺失。",
+      "市场反应仅作为披露时间附近的相关性观察，不作为事件导致价格变化的因果证明。",
+      "AI对利好、利空、混合和暂不明确的影响方向判断用于演示性信息整理，不构成投资建议。"
+    ]
+  },
+  "method": {
+    "claim_types": ["fact", "opinion", "inference", "rumor"],
+    "relations": ["supports", "supplements", "denies", "corrects", "updates", "supersedes"],
+    "impact_labels": ["positive", "negative", "mixed", "unclear"],
+    "confirmation_statuses": ["rumor", "pending_confirmation", "partially_confirmed", "confirmed", "denied"],
+    "execution_statuses": ["not_started", "planning", "pending_approval", "pending_execution", "implementing", "in_progress", "completed", "terminated", "expired", "unknown"],
+    "rule": "价格表现仅用于描述市场反应，不用于证明事件真伪；观点和推测不得覆盖正式公告。"
+  },
+  "source_analyses": [
+    {
+      "source_id": "src-001",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "南北船合并在业界流传多年。", "type": "rumor", "verification": "由新闻回溯确认存在该市场叙事，但无法确定最初传播时间和首发者。"},
+        {"text": "2019年7月1日八家上市公司确认两集团筹划战略性重组，方案未定。", "type": "fact", "verification": "多家公司公告所述，新闻列出八家公司。"},
+        {"text": "集团重组将进一步发展为中国船舶吸并中国重工。", "type": "inference", "verification": "2019年当时未获公司确认，后续事实与推测方向一致，但不能倒推当时已确定。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "建立最早可验证的传闻/预期版本，同时明确集团重组不等同于上市公司吸并。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "unclear", "cmp-power": "unclear"},
+      "impact_basis": "只有集团层面方向，上市公司资产、对价与实施路径均未知。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "集团筹划获公告确认，上市公司吸并仍是推测。",
+      "conclusion_delta": "从纯传闻更新为集团战略重组部分确认。"
+    },
+    {
+      "source_id": "src-002",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "中国船舶集团承诺在2021年6月30日起五年内解决同业竞争。", "type": "fact", "verification": "上市公司年度报告披露。"},
+        {"text": "解决方式可能包括资产重组、股权置换、业务合并等。", "type": "fact", "verification": "承诺函列举多种可选方式，未锁定吸并。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "把长期预期转为有期限的正式承诺，但没有确认具体合并方案。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "unclear", "cmp-power": "unclear"},
+      "impact_basis": "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "解决同业竞争的义务落地，具体交易待确认。",
+      "conclusion_delta": "新增正式承诺和2026年前的期限约束。"
+    },
+    {
+      "source_id": "src-003",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "中国船舶拟换股吸收合并中国重工。", "type": "fact", "verification": "公司公告。"},
+        {"text": "两股自2024年9月3日停牌。", "type": "fact", "verification": "公司公告与后续报告书一致。"},
+        {"text": "交易必然完成。", "type": "inference", "verification": "当时缺乏方案与审批，不能成立。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "首次正式确认上市公司吸并方向。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "可能消除同业竞争，但换股比例、整合成本、审批和停牌流动性风险未知。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "交易方向确认，方案与审批未完成。",
+      "conclusion_delta": "从多种可能的整合方式收敛为明确换股吸收合并。"
+    },
+    {
+      "source_id": "src-004",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "合并后按静态数据新接订单和手持订单将居全球上市船企第一。", "type": "inference", "verification": "基于披露与行业数据的静态合并测算，不等同于实现协同。"},
+        {"text": "中船系板块两日盘中累计最大涨幅超过10%。", "type": "fact", "verification": "媒体对同期行情的观测。"},
+        {"text": "事件对相关上市公司的影响可能偏短期并出现分化。", "type": "opinion", "verification": "国融证券投顾观点。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "补充产业规模、专家观点和停牌期间同板块的初步市场反应。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "positive"},
+      "impact_basis": "中国动力作为中船系标的受板块预期带动，但专家明确提示分化；对停牌双方无法观察即时个股反应。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "公司确认合并目的，方案仍待披露。",
+      "conclusion_delta": "新增“产业逻辑偏正面、短期价格可能分化”的双重判断。"
+    },
+    {
+      "source_id": "src-005",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "合并有望减少同业竞争并提升技术、供应链和运营协同。", "type": "opinion", "verification": "开源证券研报观点，属于前瞻判断。"},
+        {"text": "合并会实现1+1大于2。", "type": "inference", "verification": "尚无合并后经营数据，不能作为事实。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "提供研报/专家层面的正面产业逻辑。",
+      "impact": {"cmp-cssc": "positive", "cmp-csic": "positive", "cmp-power": "unclear"},
+      "impact_basis": "对吸并双方的长期协同方向偏正面，但没有量化兑现；对中国动力没有直接结论。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "机构基于已公告方向分析，不能替代正式预案和审批。",
+      "conclusion_delta": "新增长期协同的机构支持观点。"
+    },
+    {
+      "source_id": "src-006",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "董事会审议通过重组方案和预案。", "type": "fact", "verification": "公司复牌公告。"},
+        {"text": "股票于2024年9月19日复牌。", "type": "fact", "verification": "公司公告。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "把停牌筹划推进到董事会预案。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "方案清晰度提高，但仍需审批且存在换股定价和整合风险。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "预案不是完成交割。",
+      "conclusion_delta": "由方向确认更新为正式预案。"
+    },
+    {
+      "source_id": "src-007",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "预案换股比例为1股中国重工换0.1335股中国船舶。", "type": "fact", "verification": "预案及新闻对公告的复核。"},
+        {"text": "复牌早盘两股高开后回落。", "type": "fact", "verification": "盘中行情观测。"},
+        {"text": "高开回落证明交易价值为负。", "type": "inference", "verification": "不能成立；短期价格受定价、预期兑现和大盘等多因素影响。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "补充定价细节和即时市场反应。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "negative", "cmp-power": "unclear"},
+      "impact_basis": "中国船舶收盘仍涨3.32%，中国重工跌2.41%；两者方向分化，不能统一标为利好。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "方案已披露但尚未获全部审批。",
+      "conclusion_delta": "事件状态继续推进，但市场反应由“预期偏正面”更正为明显分化。"
+    },
+    {
+      "source_id": "src-008",
+      "same_event": true,
+      "event_id": "evt-aux-power-rights-change",
+      "claims": [
+        {"text": "中国重工原直接持有中国动力454,731,000股。", "type": "fact", "verification": "中国动力公告第1页重要内容提示及第3页权益变动表。"},
+        {"text": "合并完成后，454,731,000股由中国船舶承继，中国重工不再持有中国动力股份。", "type": "fact", "verification": "中国动力《关于股东权益变动的提示性公告》第1页及第3页。"},
+        {"text": "中国动力控股股东、实际控制人不发生变化。", "type": "fact", "verification": "中国动力公告第1页重要内容提示。"},
+        {"text": "该权益变化不会对中国动力日常生产经营产生重大影响。", "type": "opinion", "verification": "这是中国动力在提示性公告中的公司判断；当前材料没有提供独立量化测算。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "确认第三家公司受到的法律关系影响。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "权益变动路径披露，仍依赖主交易完成。",
+      "conclusion_delta": "第三家公司从同业关联升级为主交易直接影响对象。"
+    },
+    {
+      "source_id": "src-009",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "交易方案、风险、股价异动核查和整合安排已形成完整报告书。", "type": "fact", "verification": "公司向上交所披露的交易报告书。"},
+        {"text": "剔除大盘和行业因素后，中国重工首次公告前20个交易日累计波动未超过20%。", "type": "fact", "verification": "报告书的监管口径核查。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "以更完整材料替代预案阶段的有限信息。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "产业整合价值与审批、执行、摊薄、整合风险并存。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "正式报告书完备，但注册和实施尚未完成。",
+      "conclusion_delta": "证据完整度提高，结论仍保留执行条件。"
+    },
+    {
+      "source_id": "src-010",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "中国证监会同意吸收合并注册。", "type": "fact", "verification": "证监会批复。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "消除核心监管不确定性。",
+      "impact": {"cmp-cssc": "positive", "cmp-csic": "positive", "cmp-power": "unclear"},
+      "impact_basis": "对完成概率构成明确正面更新；具体市场价格与最终整合价值仍需另看。",
+      "landing_status": "confirmed",
+      "status_basis": "监管已注册，但实施尚未完成，产品可显示为“已确认/待实施”。",
+      "conclusion_delta": "从有条件交易更新为监管批准。"
+    },
+    {
+      "source_id": "src-011",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "中国重工自2025年9月5日起终止上市。", "type": "fact", "verification": "上交所终止上市决定。"},
+        {"text": "终止上市原因为被吸收合并后不再具有独立主体资格。", "type": "fact", "verification": "上交所公告。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "确认被吸并方退出上市的执行步骤。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。",
+      "landing_status": "confirmed",
+      "status_basis": "上交所已作出并执行终止上市决定。",
+      "conclusion_delta": "从批准进入不可逆的实施环节。"
+    },
+    {
+      "source_id": "src-012",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "换股已于2025年9月11日完成股份登记。", "type": "fact", "verification": "中国结算证券变更登记证明由公告披露。"},
+        {"text": "最终换股比例为1:0.1339，新增股份于9月16日上市。", "type": "fact", "verification": "实施结果公告。"},
+        {"text": "预案比例0.1335已被最终0.1339替代。", "type": "fact", "verification": "两版公告对比。"}
+      ],
+      "relation_to_previous": "updates",
+      "relation_note": "最终实施比例更新为1:0.1339，替代预案阶段的1:0.1335；这不是对早期错误的更正。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。",
+      "landing_status": "confirmed",
+      "status_basis": "股份登记与上市安排均完成披露。",
+      "conclusion_delta": "执行状态由待实施更新为已完成；最终实施比例1:0.1339替代预案比例1:0.1335。"
+    },
+    {
+      "source_id": "src-013",
+      "same_event": true,
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "claims": [
+        {"text": "中国动力拟购买中船柴油机16.5136%股权，作价381,428.40万元。", "type": "fact", "verification": "交易报告书草案。"},
+        {"text": "收购将强化动力业务整合。", "type": "opinion", "verification": "交易逻辑，尚待完成后经营数据验证。"}
+      ],
+      "relation_to_previous": "supports",
+      "relation_note": "建立辅助事件的方案版本。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "unclear", "cmp-power": "mixed"},
+      "impact_basis": "提高持股比例和整合度可能正面，但现金/可转债成本、审批与估值风险存在。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "草案与价格明确，尚未实施。",
+      "conclusion_delta": "由筹划推进为定价明确的草案。"
+    },
+    {
+      "source_id": "src-014",
+      "same_event": true,
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "claims": [
+        {"text": "中国动力于2025年9月12日决定终止交易并撤回申请。", "type": "fact", "verification": "公司公告。"},
+        {"text": "终止原因是外部环境及有关情况变化并拟优化方案。", "type": "fact", "verification": "公司表述较概括，具体变化未披露。"},
+        {"text": "终止不会对公司造成重大不利影响。", "type": "opinion", "verification": "公司判断；需以后续财务与经营数据验证。"}
+      ],
+      "relation_to_previous": "supersedes",
+      "relation_note": "终止结论替代此前待审批方案。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "unclear", "cmp-power": "mixed"},
+      "impact_basis": "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。",
+      "landing_status": "terminated",
+      "status_basis": "董事会通过终止并签署终止协议。",
+      "conclusion_delta": "从待审核直接更新为已终止。"
+    },
+    {
+      "source_id": "src-015",
+      "same_event": true,
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "claims": [
+        {"text": "主合并将消除中国船舶与中国重工间的核心同业竞争。", "type": "inference", "verification": "交易目的及承诺变更依据；完全效果仍需整合后验证。"},
+        {"text": "剩余同业竞争事项另设解决期限。", "type": "fact", "verification": "承诺变更公告。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "说明主合并并未一次消除集团内所有同业竞争问题。",
+      "impact": {"cmp-cssc": "mixed", "cmp-csic": "positive", "cmp-power": "unclear"},
+      "impact_basis": "核心重复业务整合偏正面，但仍存在沪东中华、黄埔文冲等后续承诺执行不确定性。",
+      "landing_status": "confirmed",
+      "status_basis": "承诺变更已公告，后续履行仍待跟踪。",
+      "conclusion_delta": "将“彻底解决同业竞争”的过强说法更正为“解决核心冲突、仍有剩余事项”。"
+    },
+    {
+      "source_id": "src-016",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "2025年8月12日是中国重工最后一个交易日。", "type": "fact", "verification": "中国重工临2025-053公告的重要内容提示。"},
+        {"text": "中国重工自2025年8月13日起连续停牌、不再交易，直至终止上市。", "type": "fact", "verification": "中国重工临2025-053公告。"},
+        {"text": "连续停牌意味着当日已经终止上市。", "type": "inference", "verification": "不成立；停牌和终止上市是两个不同状态，终止上市自2025年9月5日起生效。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "补充监管注册之后、正式终止上市之前的连续停牌执行阶段。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "mixed", "cmp-power": "unclear"},
+      "impact_basis": "连续停牌是现金选择权、清算交收和换股实施安排，带来阶段性不可交易，但不能单独判断经营利好或利空。",
+      "landing_status": "confirmed",
+      "status_basis": "公司正式公告明确停牌起点及持续至终止上市。",
+      "conclusion_delta": "在“监管已确认”和“终止上市”之间增加可验证的连续停牌执行阶段。"
+    },
+    {
+      "source_id": "src-017",
+      "same_event": true,
+      "event_id": "evt-main-cssc-csic-merger",
+      "claims": [
+        {"text": "中国重工在连续停牌前最后一个交易日2025年8月12日收盘为5.10元。", "type": "fact", "verification": "Investing.com历史行情表；最后交易日日期另由src-016第一手公告确认。"},
+        {"text": "5.10元收盘价证明吸收合并对股东有利。", "type": "inference", "verification": "不成立；单日价格不能证明交易价值或因果关系。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "为连续停牌记录补充停牌前最后收盘价，不改变事件确认或执行状态。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "unclear", "cmp-power": "unclear"},
+      "impact_basis": "该数据仅用于交易状态上下文，不据此作利好或利空判断。",
+      "landing_status": "confirmed",
+      "status_basis": "价格与日期分别由历史行情和公司公告支持。",
+      "conclusion_delta": "新增停牌前价格锚点，不改变主事件结论。"
+    },
+    {
+      "source_id": "src-018",
+      "same_event": true,
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "claims": [
+        {"text": "中国动力在辅助重组停牌前最后一个交易日2024年10月25日收盘为23.56元。", "type": "fact", "verification": "交易独立财务顾问核查文件明确列示日期和收盘价。"},
+        {"text": "23.56元可以证明辅助重组将完成。", "type": "inference", "verification": "不成立；停牌前价格与交易最终是否完成不存在证明关系，该交易后续已终止。"}
+      ],
+      "relation_to_previous": "supplements",
+      "relation_note": "为中国动力辅助重组停牌记录增加停牌前最后收盘价。",
+      "impact": {"cmp-cssc": "unclear", "cmp-csic": "unclear", "cmp-power": "unclear"},
+      "impact_basis": "该数据仅用于交易状态上下文，不单独形成影响方向判断。",
+      "landing_status": "partially_confirmed",
+      "status_basis": "停牌日期和前一交易日收盘价由交易文件确认；当时交易仍待审批。",
+      "conclusion_delta": "新增停牌前价格锚点，不改变辅助事件后来终止的结论。"
+    }
+  ],
+  "current_company_impact": [
+    {
+      "company_id": "cmp-cssc",
+      "label": "mixed",
+      "basis": "正面：交易完成、承接两大总装平台并减少核心同业竞争。负面/风险：新增约30.53亿股带来摊薄与整合执行压力，且剩余同业竞争承诺尚待履行。"
+    },
+    {
+      "company_id": "cmp-csic",
+      "label": "mixed",
+      "basis": "原股东按最终1:0.1339获得中国船舶股份并参与存续平台；但中国重工已终止上市、不再保持独立主体，复牌初期价格表现偏弱。"
+    },
+    {
+      "company_id": "cmp-power",
+      "label": "unclear",
+      "basis": "直接股东权益由中国重工转由中国船舶承继，但实际控制人和主营业务未变；独立的柴油机股权收购又于2025年9月终止，尚无足够财务数据量化净影响。"
+    }
+  ]
+}

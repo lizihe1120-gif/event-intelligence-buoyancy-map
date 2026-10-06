@@ -1,0 +1,454 @@
+{
+  "run_id": "material-analysis-001",
+  "prompt_version": "material-analysis-v1",
+  "model_name": "unknown",
+  "provider_mode": "saved_result",
+  "system_prompt": "你是中国上市公司事件情报分析器，只能基于输入来源生成严格JSON。\n逐项判断材料是否属于同一事件；区分fact、opinion、inference、rumor。\n关系只允许supports、supplements、updates、denies、corrects、supersedes。\nconfirmation_status与execution_status必须独立；completed不表示市场已完全定价。\n对每个事件—公司分别输出positive、negative、mixed或unclear，以及正面、负面和不确定因素。\n必须引用输入中真实存在的source_id，不得生成股票价格、涨跌幅或不存在的来源。\n不得把观点或传闻当成事实，不得把停牌直接解释为利空。\n不得输出买入、卖出、目标价或收益预测；不得把披露附近的行情变化写成事件因果。\n不得决定A-D证据等级、转载计权或relation_stage；这些字段由确定性程序派生和校验。",
+  "user_prompt": "{\n  \"task\": \"从保存的来源快照生成事件簇、主张、版本、双状态和逐公司影响判断。\",\n  \"run_id\": \"material-analysis-001\",\n  \"prompt_version\": \"material-analysis-v1\",\n  \"target_companies\": [\n    {\n      \"company_id\": \"cmp-cssc\",\n      \"name\": \"中国船舶工业股份有限公司\",\n      \"short_name\": \"中国船舶\",\n      \"ticker\": \"600150\",\n      \"exchange\": \"SSE\",\n      \"aliases\": [\n        \"中国船舶\",\n        \"CSSC上市平台\",\n        \"吸并方\",\n        \"存续公司\"\n      ],\n      \"role_in_main_event\": \"吸并方、换股发行方和合并后的存续上市公司\"\n    },\n    {\n      \"company_id\": \"cmp-csic\",\n      \"name\": \"中国船舶重工股份有限公司\",\n      \"short_name\": \"中国重工\",\n      \"ticker\": \"601989\",\n      \"exchange\": \"SSE\",\n      \"aliases\": [\n        \"中国重工\",\n        \"CSIC上市平台\",\n        \"被吸并方\"\n      ],\n      \"role_in_main_event\": \"被吸并方；终止上市后，其资产、负债、业务、人员、合同和权利义务由中国船舶承继\"\n    },\n    {\n      \"company_id\": \"cmp-power\",\n      \"name\": \"中国船舶重工集团动力股份有限公司\",\n      \"short_name\": \"中国动力\",\n      \"ticker\": \"600482\",\n      \"exchange\": \"SSE\",\n      \"aliases\": [\n        \"中国动力\",\n        \"中船动力上市平台\"\n      ],\n      \"role_in_main_event\": \"中国重工直接持股的上市公司；主合并导致其直接股东权益由中国重工转由中国船舶承继\"\n    }\n  ],\n  \"company_relationships\": [\n    {\n      \"company_id\": \"cmp-cssc\",\n      \"role_in_main_event\": \"吸并方、换股发行方和合并后的存续上市公司\"\n    },\n    {\n      \"company_id\": \"cmp-csic\",\n      \"role_in_main_event\": \"被吸并方；终止上市后，其资产、负债、业务、人员、合同和权利义务由中国船舶承继\"\n    },\n    {\n      \"company_id\": \"cmp-power\",\n      \"role_in_main_event\": \"中国重工直接持股的上市公司；主合并导致其直接股东权益由中国重工转由中国船舶承继\"\n    }\n  ],\n  \"deduplicated_sources\": [\n    {\n      \"source_id\": \"src-001\",\n      \"source_type\": \"news_and_market_rumor\",\n      \"title\": \"“中国神船”诞生在望 “南北船”8子公司全线大涨\",\n      \"publisher\": \"新京报\",\n      \"published_at\": \"2019-07-02T09:44:00+08:00\",\n      \"is_first_party\": false,\n      \"is_reprint\": true,\n      \"original_source\": \"新京报\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"“南船北船合并”已在业界流传多年；八家上市公司公告两集团筹划战略性重组，但有关方案尚未确定。\"\n    },\n    {\n      \"source_id\": \"src-002\",\n      \"source_type\": \"annual_report\",\n      \"title\": \"中国船舶2021年年度报告（同业竞争承诺节选）\",\n      \"publisher\": \"中国船舶工业股份有限公司\",\n      \"published_at\": \"2022-04-29\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国船舶在上海证券交易所披露的年度报告\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"中国船舶集团于2021年6月30日承诺，五年内综合运用资产重组、股权置换/转让、业务合并等方式解决同业竞争。\"\n    },\n    {\n      \"source_id\": \"src-003\",\n      \"source_type\": \"company_announcement\",\n      \"title\": \"中国船舶换股吸收合并中国重工暨关联交易预案\",\n      \"publisher\": \"中国船舶工业股份有限公司、中国船舶重工股份有限公司\",\n      \"published_at\": \"2024-09-03\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国船舶、中国重工在上海证券交易所披露的公告\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"因筹划重大资产重组，两家公司股票自2024年9月3日开市起停牌；拟由中国船舶发行A股换股吸收合并中国重工。\"\n    },\n    {\n      \"source_id\": \"src-004\",\n      \"source_type\": \"news_and_expert_view\",\n      \"title\": \"两巨头合并后订单将居全球第一，中船板块指数两天最多涨超10%\",\n      \"publisher\": \"第一财经\",\n      \"published_at\": \"2024-09-04T13:18:35+08:00\",\n      \"is_first_party\": false,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"公司证券事务部门称合并是为了兑现2026年前解决同业竞争的承诺；国融证券投顾认为影响可能偏短期并在数日后分化。\"\n    },\n    {\n      \"source_id\": \"src-005\",\n      \"source_type\": \"research_view\",\n      \"title\": \"两船合并，央企重组预期或被点燃\",\n      \"publisher\": \"开源证券；中国能源网摘要发布\",\n      \"published_at\": \"2024-09-09T16:57:00+08:00\",\n      \"is_first_party\": false,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"研报认为合并有望解决集团内部同业竞争，并通过技术、业务与供应链整合提升整体能力；这是机构观点而非已实现事实。\"\n    },\n    {\n      \"source_id\": \"src-006\",\n      \"source_type\": \"company_announcement\",\n      \"title\": \"关于披露重组预案的一般风险提示暨公司股票复牌的公告\",\n      \"publisher\": \"中国船舶重工股份有限公司\",\n      \"published_at\": \"2024-09-19\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国重工在上海证券交易所披露的公告\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"董事会于9月18日审议重组方案及预案，公司股票于9月19日开市起复牌。\"\n    },\n    {\n      \"source_id\": \"src-007\",\n      \"source_type\": \"news_market_reaction\",\n      \"title\": \"中国船舶、中国重工换股方案定了！复牌高开低走\",\n      \"publisher\": \"第一财经\",\n      \"published_at\": \"2024-09-19T10:16:13+08:00\",\n      \"is_first_party\": false,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"预案给出37.84元与5.05元换股价格、1:0.1335比例；复牌后两股高开回落，说明落地确认与价格反应并不一致。\"\n    },\n    {\n      \"source_id\": \"src-008\",\n      \"source_type\": \"shareholder_equity_change_notice\",\n      \"title\": \"中国船舶重工集团动力股份有限公司关于股东权益变动的提示性公告\",\n      \"publisher\": \"中国船舶重工集团动力股份有限公司\",\n      \"published_at\": \"2025-01-25\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\",\n        \"evt-aux-power-rights-change\"\n      ],\n      \"excerpt\": \"中国重工原直接持有中国动力454,731,000股；合并完成后，该等股份由中国船舶承继，中国重工不再持有中国动力股份。公告称该变化不会使中国动力控股股东、实际控制人发生变化，不会对其日常生产经营产生重大影响。\"\n    },\n    {\n      \"source_id\": \"src-009\",\n      \"source_type\": \"transaction_report\",\n      \"title\": \"中国船舶换股吸收合并中国重工暨关联交易报告书\",\n      \"publisher\": \"中国船舶工业股份有限公司\",\n      \"published_at\": \"2025-05-08\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"完整披露交易方案、审批条件、股价波动核查、业务整合与风险；确认中国重工在停牌前20个交易日相对大盘及行业剔除后波动未超过20%。\"\n    },\n    {\n      \"source_id\": \"src-010\",\n      \"source_type\": \"regulatory_approval\",\n      \"title\": \"关于同意中国船舶工业股份有限公司吸收合并中国船舶重工股份有限公司注册的批复\",\n      \"publisher\": \"中国证券监督管理委员会\",\n      \"published_at\": \"2025-07-18\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"中国证监会同意中国船舶吸收合并中国重工的注册申请。\"\n    },\n    {\n      \"source_id\": \"src-011\",\n      \"source_type\": \"exchange_decision\",\n      \"title\": \"关于中国船舶重工股份有限公司股票终止上市的公告\",\n      \"publisher\": \"上海证券交易所\",\n      \"published_at\": \"2025-08-29\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-csic\",\n        \"cmp-cssc\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"因被吸收合并将不再具有独立主体资格，上交所决定自2025年9月5日起终止中国重工股票上市交易。\"\n    },\n    {\n      \"source_id\": \"src-012\",\n      \"source_type\": \"implementation_announcement\",\n      \"title\": \"换股实施结果、股份变动暨新增股份上市公告\",\n      \"publisher\": \"中国船舶工业股份有限公司\",\n      \"published_at\": \"2025-09-12\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国船舶在上海证券交易所披露的公告\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\",\n        \"evt-aux-power-rights-change\"\n      ],\n      \"excerpt\": \"换股登记日为9月4日，最终每股中国重工转换0.1339股中国船舶；9月11日取得证券变更登记证明，新增股份于9月16日上市。\"\n    },\n    {\n      \"source_id\": \"src-013\",\n      \"source_type\": \"transaction_report\",\n      \"title\": \"中国动力发行可转换公司债券及支付现金购买资产暨关联交易报告书（草案）\",\n      \"publisher\": \"中国船舶重工集团动力股份有限公司\",\n      \"published_at\": \"2025-06-30\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-power\",\n        \"cmp-cssc\"\n      ],\n      \"event_ids\": [\n        \"evt-aux-power-diesel-acquisition\"\n      ],\n      \"excerpt\": \"拟以可转债及现金购买中船工业集团持有的中船柴油机16.5136%股权，作价381,428.40万元。\"\n    },\n    {\n      \"source_id\": \"src-014\",\n      \"source_type\": \"termination_announcement\",\n      \"title\": \"关于终止发行可转换公司债券及支付现金购买资产并募集配套资金暨关联交易事项并撤回申请文件的公告\",\n      \"publisher\": \"中国船舶重工集团动力股份有限公司\",\n      \"published_at\": \"2025-09-13\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国动力在上海证券交易所披露的公告\",\n      \"company_ids\": [\n        \"cmp-power\",\n        \"cmp-cssc\"\n      ],\n      \"event_ids\": [\n        \"evt-aux-power-diesel-acquisition\"\n      ],\n      \"excerpt\": \"因外部环境及有关情况发生变化、拟优化交易方案，公司决定终止交易并撤回申请；公司仍持有中船柴油机51.8526%股权。\"\n    },\n    {\n      \"source_id\": \"src-015\",\n      \"source_type\": \"commitment_change_announcement\",\n      \"title\": \"关于公司控股股东及实际控制人变更避免同业竞争承诺的公告\",\n      \"publisher\": \"中国船舶工业股份有限公司；证券之星展示\",\n      \"published_at\": \"2025-01-25\",\n      \"is_first_party\": true,\n      \"is_reprint\": true,\n      \"original_source\": \"中国船舶公告\",\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-aux-cssc-noncompete-change\"\n      ],\n      \"excerpt\": \"主合并将消除中国船舶与中国重工间的同业竞争，原承诺调整，并为沪东中华、黄埔文冲等剩余事项安排后续期限。\"\n    },\n    {\n      \"source_id\": \"src-016\",\n      \"source_type\": \"continuous_suspension_notice\",\n      \"title\": \"中国船舶重工股份有限公司关于公司股票连续停牌直至终止上市、实施换股吸收合并的提示性公告\",\n      \"publisher\": \"中国船舶重工股份有限公司\",\n      \"published_at\": \"2025-08-09\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-csic\",\n        \"cmp-cssc\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"中国重工股票自2025年8月13日开市起连续停牌、不再交易，2025年8月12日为最后一个交易日；此后进入现金选择权、清算交收和换股实施阶段，继续停牌直至终止上市。\"\n    },\n    {\n      \"source_id\": \"src-017\",\n      \"source_type\": \"historical_market_data\",\n      \"title\": \"中国重工（601989）历史数据：2025年8月12日\",\n      \"publisher\": \"Investing.com\",\n      \"published_at\": null,\n      \"is_first_party\": false,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-csic\"\n      ],\n      \"event_ids\": [\n        \"evt-main-cssc-csic-merger\"\n      ],\n      \"excerpt\": \"历史行情表显示中国重工2025年8月12日收盘5.10元、开盘5.01元、最高5.15元、最低4.90元；币种为CNY。\"\n    },\n    {\n      \"source_id\": \"src-018\",\n      \"source_type\": \"financial_adviser_price_check\",\n      \"title\": \"中国动力本次交易停牌前股票价格波动情况核查文件\",\n      \"publisher\": \"本次交易独立财务顾问；中国动力披露\",\n      \"published_at\": \"2025-04-30\",\n      \"is_first_party\": true,\n      \"is_reprint\": false,\n      \"company_ids\": [\n        \"cmp-power\"\n      ],\n      \"event_ids\": [\n        \"evt-aux-power-diesel-acquisition\"\n      ],\n      \"excerpt\": \"核查文件明确以2024年10月25日为本次交易停牌前一交易日，该日中国动力收盘价为23.56元/股。\"\n    }\n  ],\n  \"deduplication_context\": {\n    \"exact_duplicate_groups\": [],\n    \"near_duplicate_groups\": [],\n    \"rule\": \"折叠来源仍须可追溯；同一公告镜像和转载不得重复增加证据权重。\"\n  },\n  \"evidence_weights\": [\n    {\n      \"source_id\": \"src-001\",\n      \"canonical_source_id\": \"src-001\",\n      \"normalized_url\": \"https://news.sina.com.cn/c/2019-07-02/doc-ihytcitk9082006.shtml\",\n      \"content_hash\": \"fnv1a-41231078\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-002\",\n      \"canonical_source_id\": \"src-002\",\n      \"normalized_url\": \"https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=8155659\",\n      \"content_hash\": \"fnv1a-d54bca31\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-003\",\n      \"canonical_source_id\": \"src-003\",\n      \"normalized_url\": \"https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=10487968\",\n      \"content_hash\": \"fnv1a-f8d33c3c\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-004\",\n      \"canonical_source_id\": \"src-004\",\n      \"normalized_url\": \"https://www.yicai.com/news/102259573.html\",\n      \"content_hash\": \"fnv1a-b0bafbc6\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-005\",\n      \"canonical_source_id\": \"src-005\",\n      \"normalized_url\": \"https://www.cnenergynews.cn/jinrong/2024/09/09/detail_20240909175474.html\",\n      \"content_hash\": \"fnv1a-87aef103\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-006\",\n      \"canonical_source_id\": \"src-006\",\n      \"normalized_url\": \"https://money.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=10487987&stockid=601989\",\n      \"content_hash\": \"fnv1a-42d3cd7a\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-007\",\n      \"canonical_source_id\": \"src-007\",\n      \"normalized_url\": \"https://www.yicai.com/news/102278604.html\",\n      \"content_hash\": \"fnv1a-ffcc40eb\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-008\",\n      \"canonical_source_id\": \"src-008\",\n      \"normalized_url\": \"https://static.cninfo.com.cn/finalpage/2025-01-25/1222431584.pdf\",\n      \"content_hash\": \"fnv1a-99fc6191\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-009\",\n      \"canonical_source_id\": \"src-009\",\n      \"normalized_url\": \"https://static.sse.com.cn/stock/disclosure/announcement/c/202505/600150_20250508_rhrn.pdf\",\n      \"content_hash\": \"fnv1a-3f1c459e\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-010\",\n      \"canonical_source_id\": \"src-010\",\n      \"normalized_url\": \"https://www.csrc.gov.cn/csrc/c106395/c7572058/content.shtml\",\n      \"content_hash\": \"fnv1a-f0823fba\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-011\",\n      \"canonical_source_id\": \"src-011\",\n      \"normalized_url\": \"https://www.sse.com.cn/disclosure/announcement/listing/stock/c/c_20250829_10790128.shtml\",\n      \"content_hash\": \"fnv1a-b7adbcc3\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-012\",\n      \"canonical_source_id\": \"src-012\",\n      \"normalized_url\": \"https://money.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=11449989&stockid=600150\",\n      \"content_hash\": \"fnv1a-7d4ebd00\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-013\",\n      \"canonical_source_id\": \"src-013\",\n      \"normalized_url\": \"https://static.sse.com.cn/stock/disclosure/announcement/c/202506/600482_20250630_k0fs.pdf\",\n      \"content_hash\": \"fnv1a-3813e196\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-014\",\n      \"canonical_source_id\": \"src-014\",\n      \"normalized_url\": \"https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=11454965\",\n      \"content_hash\": \"fnv1a-dd6f85c7\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-015\",\n      \"canonical_source_id\": \"src-015\",\n      \"normalized_url\": \"https://stock.stockstar.com/an2025012500002044.shtml\",\n      \"content_hash\": \"fnv1a-a46710f3\",\n      \"evidence_weight\": 0,\n      \"fold_reason\": \"reprint_or_mirror\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-016\",\n      \"canonical_source_id\": \"src-016\",\n      \"normalized_url\": \"https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-09/601989_20250809_7oo5.pdf\",\n      \"content_hash\": \"fnv1a-77d1d883\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-017\",\n      \"canonical_source_id\": \"src-017\",\n      \"normalized_url\": \"https://cn.investing.com/equities/cn-shipbuildin-historical-data\",\n      \"content_hash\": \"fnv1a-56195375\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    },\n    {\n      \"source_id\": \"src-018\",\n      \"canonical_source_id\": \"src-018\",\n      \"normalized_url\": \"https://static.cninfo.com.cn/finalpage/2025-04-30/1223425967.pdf\",\n      \"content_hash\": \"fnv1a-33ded0d8\",\n      \"evidence_weight\": 1,\n      \"fold_reason\": \"canonical\",\n      \"traceable\": true\n    }\n  ],\n  \"candidate_clusters\": [\n    {\n      \"cluster_id\": \"cluster-001\",\n      \"event_id\": \"evt-main-cssc-csic-merger\",\n      \"event_title\": \"中国船舶换股吸收合并中国重工\",\n      \"source_ids\": [\n        \"src-001\",\n        \"src-002\",\n        \"src-003\",\n        \"src-004\",\n        \"src-005\",\n        \"src-006\",\n        \"src-007\",\n        \"src-008\",\n        \"src-009\",\n        \"src-010\",\n        \"src-011\",\n        \"src-012\",\n        \"src-016\",\n        \"src-017\"\n      ],\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"clustering_reasons\": [\n        \"结构化event_id共同指向evt-main-cssc-csic-merger\",\n        \"关联公司集合：cmp-cssc、cmp-csic、cmp-power\",\n        \"事件类型：stock_swap_absorption_merger\",\n        \"版本来源、关键实体与数字在时间线上连续承接\"\n      ],\n      \"confidence\": 0.98,\n      \"diagnostics\": {\n        \"cohesion\": 0.053,\n        \"structured_link_coverage\": 1\n      }\n    },\n    {\n      \"cluster_id\": \"cluster-002\",\n      \"event_id\": \"evt-aux-power-rights-change\",\n      \"event_title\": \"主合并触发中国动力权益承继变化\",\n      \"source_ids\": [\n        \"src-008\",\n        \"src-011\",\n        \"src-012\"\n      ],\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\",\n        \"cmp-power\"\n      ],\n      \"clustering_reasons\": [\n        \"结构化event_id共同指向evt-aux-power-rights-change\",\n        \"关联公司集合：cmp-cssc、cmp-csic、cmp-power\",\n        \"事件类型：shareholding_rights_succession\",\n        \"版本来源、关键实体与数字在时间线上连续承接\"\n      ],\n      \"confidence\": 0.93,\n      \"diagnostics\": {\n        \"cohesion\": 0.079,\n        \"structured_link_coverage\": 0.667\n      }\n    },\n    {\n      \"cluster_id\": \"cluster-003\",\n      \"event_id\": \"evt-aux-power-diesel-acquisition\",\n      \"event_title\": \"中国动力拟购中船柴油机16.5136%股权后终止\",\n      \"source_ids\": [\n        \"src-013\",\n        \"src-014\",\n        \"src-018\"\n      ],\n      \"company_ids\": [\n        \"cmp-power\",\n        \"cmp-cssc\"\n      ],\n      \"clustering_reasons\": [\n        \"结构化event_id共同指向evt-aux-power-diesel-acquisition\",\n        \"关联公司集合：cmp-power、cmp-cssc\",\n        \"事件类型：related_party_asset_acquisition\",\n        \"版本来源、关键实体与数字在时间线上连续承接\"\n      ],\n      \"confidence\": 0.98,\n      \"diagnostics\": {\n        \"cohesion\": 0.093,\n        \"structured_link_coverage\": 1\n      }\n    },\n    {\n      \"cluster_id\": \"cluster-004\",\n      \"event_id\": \"evt-aux-cssc-noncompete-change\",\n      \"event_title\": \"中国船舶集团调整解决同业竞争承诺\",\n      \"source_ids\": [\n        \"src-002\",\n        \"src-012\",\n        \"src-015\"\n      ],\n      \"company_ids\": [\n        \"cmp-cssc\",\n        \"cmp-csic\"\n      ],\n      \"clustering_reasons\": [\n        \"结构化event_id共同指向evt-aux-cssc-noncompete-change\",\n        \"关联公司集合：cmp-cssc、cmp-csic\",\n        \"事件类型：commitment_change\",\n        \"版本来源、关键实体与数字在时间线上连续承接\"\n      ],\n      \"confidence\": 0.87,\n      \"diagnostics\": {\n        \"cohesion\": 0.053,\n        \"structured_link_coverage\": 0.333\n      }\n    }\n  ],\n  \"allowed_enums\": {\n    \"claim_type\": [\n      \"fact\",\n      \"opinion\",\n      \"inference\",\n      \"rumor\"\n    ],\n    \"relation_to_previous\": [\n      \"supports\",\n      \"supplements\",\n      \"updates\",\n      \"denies\",\n      \"corrects\",\n      \"supersedes\"\n    ],\n    \"confirmation_status\": [\n      \"rumor\",\n      \"pending_confirmation\",\n      \"partially_confirmed\",\n      \"confirmed\",\n      \"denied\",\n      \"corrected\"\n    ],\n    \"execution_status\": [\n      \"not_started\",\n      \"planning\",\n      \"pending_approval\",\n      \"pending_execution\",\n      \"implementing\",\n      \"in_progress\",\n      \"completed\",\n      \"terminated\",\n      \"expired\",\n      \"unknown\"\n    ],\n    \"impact\": [\n      \"positive\",\n      \"negative\",\n      \"mixed\",\n      \"unclear\"\n    ]\n  },\n  \"citation_requirement\": \"每条主张、事件版本和逐公司影响必须引用输入中存在的source_id；逐公司影响还必须引用可解析的basis_claim_ids。\",\n  \"deterministic_program_responsibilities\": [\n    \"A-D证据等级\",\n    \"转载与镜像计权\",\n    \"状态合法性\",\n    \"引用完整性\",\n    \"relation_stage\",\n    \"行情计算\"\n  ],\n  \"output_constraint\": \"仅返回符合response_schema的JSON，不要Markdown，不要新增行情字段。\"\n}",
+  "response_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "run_id",
+      "prompt_version",
+      "model_name",
+      "generated_at",
+      "event_clusters",
+      "claims",
+      "warnings"
+    ],
+    "properties": {
+      "run_id": {
+        "type": "string"
+      },
+      "prompt_version": {
+        "type": "string"
+      },
+      "model_name": {
+        "const": "unknown"
+      },
+      "generated_at": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "warnings": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "claims": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "claim_id",
+            "text",
+            "claim_type",
+            "source_ids",
+            "basis_claim_ids",
+            "verification"
+          ],
+          "properties": {
+            "claim_id": {
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            },
+            "claim_type": {
+              "enum": [
+                "fact",
+                "opinion",
+                "inference",
+                "rumor"
+              ]
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            },
+            "basis_claim_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "verification": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "event_clusters": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "cluster_id",
+            "event_id",
+            "event_title",
+            "company_ids",
+            "current_conclusion",
+            "confirmation_status",
+            "execution_status",
+            "relation_to_previous",
+            "source_ids",
+            "claim_ids",
+            "versions",
+            "impact_by_company",
+            "confidence",
+            "conclusion_delta",
+            "warnings"
+          ],
+          "properties": {
+            "cluster_id": {
+              "type": "string"
+            },
+            "event_id": {
+              "type": "string"
+            },
+            "event_title": {
+              "type": "string"
+            },
+            "company_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "current_conclusion": {
+              "type": "string"
+            },
+            "confirmation_status": {
+              "enum": [
+                "rumor",
+                "pending_confirmation",
+                "partially_confirmed",
+                "confirmed",
+                "denied",
+                "corrected"
+              ]
+            },
+            "execution_status": {
+              "enum": [
+                "not_started",
+                "planning",
+                "pending_approval",
+                "pending_execution",
+                "implementing",
+                "in_progress",
+                "completed",
+                "terminated",
+                "expired",
+                "unknown"
+              ]
+            },
+            "relation_to_previous": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "supports",
+                    "supplements",
+                    "updates",
+                    "denies",
+                    "corrects",
+                    "supersedes"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "source_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "claim_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "versions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "version",
+                  "label",
+                  "confirmation_status",
+                  "execution_status",
+                  "occurred_at",
+                  "disclosed_at",
+                  "analysis_updated_at",
+                  "conclusion",
+                  "relation_to_previous",
+                  "conclusion_delta",
+                  "source_ids",
+                  "claim_ids",
+                  "impact_by_company"
+                ],
+                "properties": {
+                  "version": {
+                    "type": "number"
+                  },
+                  "label": {
+                    "type": "string"
+                  },
+                  "confirmation_status": {
+                    "enum": [
+                      "rumor",
+                      "pending_confirmation",
+                      "partially_confirmed",
+                      "confirmed",
+                      "denied",
+                      "corrected"
+                    ]
+                  },
+                  "execution_status": {
+                    "enum": [
+                      "not_started",
+                      "planning",
+                      "pending_approval",
+                      "pending_execution",
+                      "implementing",
+                      "in_progress",
+                      "completed",
+                      "terminated",
+                      "expired",
+                      "unknown"
+                    ]
+                  },
+                  "occurred_at": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "occurred_at_note": {
+                    "type": "string"
+                  },
+                  "disclosed_at": {
+                    "type": "string"
+                  },
+                  "analysis_updated_at": {
+                    "type": "string"
+                  },
+                  "conclusion": {
+                    "type": "string"
+                  },
+                  "relation_to_previous": {
+                    "anyOf": [
+                      {
+                        "enum": [
+                          "supports",
+                          "supplements",
+                          "updates",
+                          "denies",
+                          "corrects",
+                          "supersedes"
+                        ]
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "conclusion_delta": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "impact_by_company": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "company_id",
+                        "direction",
+                        "positive_factors",
+                        "negative_factors",
+                        "uncertainties",
+                        "confidence",
+                        "basis_claim_ids",
+                        "source_ids"
+                      ],
+                      "properties": {
+                        "company_id": {
+                          "type": "string"
+                        },
+                        "direction": {
+                          "enum": [
+                            "positive",
+                            "negative",
+                            "mixed",
+                            "unclear"
+                          ]
+                        },
+                        "positive_factors": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "negative_factors": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "uncertainties": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "confidence": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
+                        },
+                        "basis_claim_ids": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        },
+                        "source_ids": {
+                          "type": "array",
+                          "items": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "impact_by_company": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "company_id",
+                  "direction",
+                  "positive_factors",
+                  "negative_factors",
+                  "uncertainties",
+                  "confidence",
+                  "basis_claim_ids",
+                  "source_ids"
+                ],
+                "properties": {
+                  "company_id": {
+                    "type": "string"
+                  },
+                  "direction": {
+                    "enum": [
+                      "positive",
+                      "negative",
+                      "mixed",
+                      "unclear"
+                    ]
+                  },
+                  "positive_factors": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "negative_factors": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "uncertainties": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "basis_claim_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "source_ids": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "confidence": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "conclusion_delta": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "warnings": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "created_at": "2026-10-05T16:18:00+08:00",
+  "elapsed_ms": 2
+}

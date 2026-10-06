@@ -1,0 +1,582 @@
+{
+  "run_id": "material-analysis-001",
+  "generated_at": "2026-10-05T16:28:01+08:00",
+  "validation_run_passed": true,
+  "color_mapping": {
+    "positive": "red",
+    "negative": "green",
+    "mixed": "red_green",
+    "unclear": "silver"
+  },
+  "relation_stage_mapping": {
+    "pending_confirmation": "drifting",
+    "partially_confirmed": "lifting",
+    "confirmed": "approaching",
+    "completed": "stable_fusion",
+    "terminated": "cooling",
+    "denied": "cooling",
+    "expired": "cooling"
+  },
+  "companies": [
+    {
+      "company_id": "cmp-cssc",
+      "attention_score": 100,
+      "bubble_size": 207,
+      "vertical_lift": 11,
+      "market_reaction_status": "reaction_then_pullback"
+    },
+    {
+      "company_id": "cmp-csic",
+      "attention_score": 100,
+      "bubble_size": 207,
+      "vertical_lift": 11,
+      "market_reaction_status": "reaction_then_pullback"
+    },
+    {
+      "company_id": "cmp-power",
+      "attention_score": 100,
+      "bubble_size": 207,
+      "vertical_lift": 11,
+      "market_reaction_status": "reaction_then_pullback"
+    }
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "planning-suspension",
+      "date": "2024-09-03",
+      "companies": [
+        {
+          "company_id": "cmp-cssc",
+          "attention_score": 73,
+          "bubble_size": 200,
+          "vertical_lift": 6,
+          "market_reaction_status": "not_observed"
+        },
+        {
+          "company_id": "cmp-csic",
+          "attention_score": 73,
+          "bubble_size": 200,
+          "vertical_lift": 6,
+          "market_reaction_status": "not_observed"
+        },
+        {
+          "company_id": "cmp-power",
+          "attention_score": 62,
+          "bubble_size": 198,
+          "vertical_lift": 4,
+          "market_reaction_status": "not_observed"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "evt-main-cssc-csic-merger",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-cssc": "mixed",
+            "cmp-csic": "mixed",
+            "cmp-power": "positive"
+          },
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "relation_stage": "lifting",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_observed",
+          "bubble_size": 195,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "drifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 2,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 3,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 4,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "positive"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            }
+          ]
+        },
+        {
+          "event_id": "evt-aux-cssc-noncompete-change",
+          "impact": "unclear",
+          "impact_by_company": {
+            "cmp-cssc": "unclear",
+            "cmp-csic": "unclear"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "relation_stage": "approaching",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_checked",
+          "bubble_size": 166,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "snapshot_id": "plan-resumption",
+      "date": "2024-09-19",
+      "companies": [
+        {
+          "company_id": "cmp-cssc",
+          "attention_score": 79,
+          "bubble_size": 202,
+          "vertical_lift": 7,
+          "market_reaction_status": "initial_reaction"
+        },
+        {
+          "company_id": "cmp-csic",
+          "attention_score": 79,
+          "bubble_size": 202,
+          "vertical_lift": 7,
+          "market_reaction_status": "initial_reaction"
+        },
+        {
+          "company_id": "cmp-power",
+          "attention_score": 68,
+          "bubble_size": 199,
+          "vertical_lift": 5,
+          "market_reaction_status": "initial_reaction"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "evt-main-cssc-csic-merger",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-cssc": "mixed",
+            "cmp-csic": "mixed",
+            "cmp-power": "unclear"
+          },
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "pending_approval",
+          "relation_stage": "lifting",
+          "evidence_level": "first_party",
+          "market_reaction_status": "initial_reaction",
+          "bubble_size": 208,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "drifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 2,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 3,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 4,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "positive"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 5,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            }
+          ]
+        },
+        {
+          "event_id": "evt-aux-cssc-noncompete-change",
+          "impact": "unclear",
+          "impact_by_company": {
+            "cmp-cssc": "unclear",
+            "cmp-csic": "unclear"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "relation_stage": "approaching",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_checked",
+          "bubble_size": 166,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "snapshot_id": "implementation-complete",
+      "date": "2025-09-16",
+      "companies": [
+        {
+          "company_id": "cmp-cssc",
+          "attention_score": 100,
+          "bubble_size": 207,
+          "vertical_lift": 11,
+          "market_reaction_status": "reaction_then_pullback"
+        },
+        {
+          "company_id": "cmp-csic",
+          "attention_score": 100,
+          "bubble_size": 207,
+          "vertical_lift": 11,
+          "market_reaction_status": "reaction_then_pullback"
+        },
+        {
+          "company_id": "cmp-power",
+          "attention_score": 100,
+          "bubble_size": 207,
+          "vertical_lift": 11,
+          "market_reaction_status": "reaction_then_pullback"
+        }
+      ],
+      "events": [
+        {
+          "event_id": "evt-main-cssc-csic-merger",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-cssc": "mixed",
+            "cmp-csic": "mixed",
+            "cmp-power": "unclear"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "relation_stage": "stable_fusion",
+          "evidence_level": "first_party",
+          "market_reaction_status": "reaction_then_pullback",
+          "bubble_size": 226,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "drifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 2,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "reported"
+            },
+            {
+              "version": 3,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 4,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "positive"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 5,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "lifting",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 6,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 7,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "stable_fusion",
+              "evidence_level": "first_party"
+            }
+          ]
+        },
+        {
+          "event_id": "evt-aux-power-rights-change",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-cssc": "mixed",
+            "cmp-csic": "mixed",
+            "cmp-power": "unclear"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "relation_stage": "stable_fusion",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_checked",
+          "bubble_size": 179,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 2,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed",
+                "cmp-power": "unclear"
+              },
+              "relation_stage": "stable_fusion",
+              "evidence_level": "first_party"
+            }
+          ]
+        },
+        {
+          "event_id": "evt-aux-power-diesel-acquisition",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-power": "mixed",
+            "cmp-cssc": "unclear"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "terminated",
+          "relation_stage": "cooling",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_checked",
+          "bubble_size": 189,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 2,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 3,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "mixed"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 4,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 5,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 6,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 7,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-power": "mixed",
+                "cmp-cssc": "unclear"
+              },
+              "relation_stage": "cooling",
+              "evidence_level": "first_party"
+            }
+          ]
+        },
+        {
+          "event_id": "evt-aux-cssc-noncompete-change",
+          "impact": "mixed",
+          "impact_by_company": {
+            "cmp-cssc": "mixed",
+            "cmp-csic": "mixed"
+          },
+          "confirmation_status": "confirmed",
+          "execution_status": "implementing",
+          "relation_stage": "approaching",
+          "evidence_level": "first_party",
+          "market_reaction_status": "not_checked",
+          "bubble_size": 182,
+          "versions": [
+            {
+              "version": 1,
+              "impact": "unclear",
+              "impact_by_company": {
+                "cmp-cssc": "unclear",
+                "cmp-csic": "unclear"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 2,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "positive"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            },
+            {
+              "version": 3,
+              "impact": "mixed",
+              "impact_by_company": {
+                "cmp-cssc": "mixed",
+                "cmp-csic": "mixed"
+              },
+              "relation_stage": "approaching",
+              "evidence_level": "first_party"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

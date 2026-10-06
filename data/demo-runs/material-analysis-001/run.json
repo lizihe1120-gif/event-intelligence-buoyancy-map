@@ -1,0 +1,67 @@
+{
+  "run_id": "material-analysis-001",
+  "acquisition_snapshot_id": "acquisition-001",
+  "started_at": "2026-10-05T16:18:00+08:00",
+  "completed_at": "2026-10-05T16:28:01+08:00",
+  "source_count": 18,
+  "canonical_evidence_count": 11,
+  "event_count": 4,
+  "prompt_version": "material-analysis-v1",
+  "model_name": "unknown",
+  "provider_mode": "saved_result",
+  "provider_runtime": {
+    "provider_id": "saved-analysis-provider",
+    "provider_name": "Saved Analysis Provider",
+    "mode": "saved_result",
+    "model": "unknown",
+    "prompt_version": "material-analysis-v1",
+    "timeout_ms": 1000,
+    "capability": {
+      "status": "ready",
+      "strict_json": true,
+      "server_proxy_required": false,
+      "external_call_enabled": false,
+      "reason_code": null
+    }
+  },
+  "online_provider": {
+    "provider_id": "online-unconfigured",
+    "provider_name": "unconfigured Online Analysis Provider",
+    "mode": "online",
+    "model": "unknown",
+    "prompt_version": "material-analysis-v1",
+    "timeout_ms": 30000,
+    "capability": {
+      "status": "disabled",
+      "strict_json": true,
+      "server_proxy_required": true,
+      "external_call_enabled": false,
+      "reason_code": "ONLINE_PROVIDER_REQUIRES_SERVER_PROXY"
+    }
+  },
+  "fallback": {
+    "used": false,
+    "from_provider_id": null,
+    "to_provider_id": null,
+    "reason_code": null,
+    "message": "默认直接使用保存结果，未发生 Provider 回退。"
+  },
+  "status": "completed",
+  "visual_result_applied": true,
+  "total_elapsed_ms": 21,
+  "stage_timings_ms": {
+    "acquisition_snapshot": 1,
+    "deduplication": 4,
+    "clustering": 3,
+    "prompt_builder": 2,
+    "saved_analysis_provider": 5,
+    "validation": 3,
+    "visual_model": 3
+  },
+  "limitations": [
+    "来源采集使用已保存快照。",
+    "AI结果是本次保存的分析运行产物，模型名称无法确认。",
+    "未调用在线模型；未运行iFinD、扶摇、真实爬虫或外部Agent。",
+    "行情变化不证明事件因果；分析不构成投资建议。"
+  ]
+}

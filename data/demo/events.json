@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-10-05T16:28:01+08:00",
+  "confirmation_status_taxonomy": ["rumor", "pending_confirmation", "partially_confirmed", "confirmed", "denied"],
+  "execution_status_taxonomy": ["not_started", "planning", "pending_approval", "pending_execution", "implementing", "in_progress", "completed", "terminated", "expired", "unknown"],
+  "events": [
+    {
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_type": "stock_swap_absorption_merger",
+      "is_main_event": true,
+      "title": "中国船舶换股吸收合并中国重工",
+      "company_ids": ["cmp-cssc", "cmp-csic", "cmp-power"],
+      "confirmation_status": "confirmed",
+      "execution_status": "completed",
+      "current_conclusion": "换股吸收合并已实施完成。中国重工于2025-09-05终止上市；换股股份于2025-09-11完成登记，中国船舶新增股份于2025-09-16上市。中国动力的直接股东权益承继关系随之变化。",
+      "times": {
+        "occurred_at": "2025-09-11",
+        "occurred_at_note": "以中国结算出具证券变更登记证明之日作为交易实施完成的可验证发生时间。长期传闻阶段的实际起点未知。",
+        "disclosed_at": "2025-09-12",
+        "fetched_at": "2026-10-05T14:20:00+08:00",
+        "analysis_updated_at": "2026-10-05T15:33:00+08:00"
+      },
+      "versions": [
+        {
+          "version": 1,
+          "label": "长期市场传闻",
+          "confirmation_status": "rumor",
+          "execution_status": "not_started",
+          "occurred_at": null,
+          "disclosed_at": "2019-07-02T09:44:00+08:00",
+          "fetched_at": "2026-10-05T14:23:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:35:00+08:00",
+          "conclusion": "“南船北船合并”已流传多年，但上市公司层面的中国船舶吸并中国重工并未被确认。",
+          "source_ids": ["src-001"]
+        },
+        {
+          "version": 2,
+          "label": "集团战略重组得到部分确认",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2019-07-01",
+          "disclosed_at": "2019-07-01",
+          "fetched_at": "2026-10-05T14:23:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:35:00+08:00",
+          "conclusion": "八家上市公司确认两大集团筹划战略性重组，但方案未定；这不能等同于两家上市公司吸收合并。",
+          "source_ids": ["src-001"]
+        },
+        {
+          "version": 3,
+          "label": "解决同业竞争的方向确认",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2021-06-30",
+          "disclosed_at": "2021-07-09",
+          "fetched_at": "2026-10-05T14:25:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:38:00+08:00",
+          "conclusion": "中国船舶集团承诺五年内通过资产重组、业务合并等方式解决同业竞争，但没有锁定具体交易形式和对象。",
+          "source_ids": ["src-002"]
+        },
+        {
+          "version": 4,
+          "label": "吸并方向正式确认、细节待定",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": null,
+          "occurred_at_note": "两公司开始初步磋商的日期未公开。",
+          "disclosed_at": "2024-09-02T18:00:00+08:00",
+          "fetched_at": "2026-10-05T14:18:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:40:00+08:00",
+          "conclusion": "中国船舶拟发行A股换股吸收合并中国重工，9月3日起停牌；换股价格、比例和最终审批均未确定。",
+          "source_ids": ["src-003", "src-004", "src-005"]
+        },
+        {
+          "version": 5,
+          "label": "预案与换股比例披露",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2024-09-18",
+          "disclosed_at": "2024-09-18T18:00:00+08:00",
+          "fetched_at": "2026-10-05T14:27:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:42:00+08:00",
+          "conclusion": "董事会通过预案，初始换股比例为每1股中国重工换0.1335股中国船舶；交易仍需国资、交易所和证监会程序。",
+          "source_ids": ["src-006", "src-007"]
+        },
+        {
+          "version": 6,
+          "label": "监管注册完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_execution",
+          "occurred_at": "2025-07-18",
+          "disclosed_at": "2025-07-18",
+          "fetched_at": "2026-10-05T14:45:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:47:00+08:00",
+          "conclusion": "中国证监会同意吸收合并注册，核心监管不确定性消除，但换股与股份登记尚待实施。",
+          "source_ids": ["src-009", "src-010"]
+        },
+        {
+          "version": 7,
+          "label": "终止上市与换股实施完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "occurred_at": "2025-09-11",
+          "disclosed_at": "2025-09-12",
+          "fetched_at": "2026-10-05T14:48:00+08:00",
+          "analysis_updated_at": "2026-10-05T15:33:00+08:00",
+          "conclusion": "中国重工9月5日终止上市；最终实施比例更新为1:0.1339，替代预案阶段的1:0.1335；9月11日完成登记，新增股份9月16日上市。",
+          "change_from_previous": "确认状态保持为已确认；执行状态从待实施更新为已完成。最终实施比例1:0.1339替代预案比例1:0.1335，并不表示预案披露错误。",
+          "source_ids": ["src-011", "src-012"]
+        }
+      ]
+    },
+    {
+      "event_id": "evt-aux-power-rights-change",
+      "event_type": "shareholding_rights_succession",
+      "is_main_event": false,
+      "title": "主合并触发中国动力权益承继变化",
+      "company_ids": ["cmp-cssc", "cmp-csic", "cmp-power"],
+      "confirmation_status": "confirmed",
+      "execution_status": "completed",
+      "current_conclusion": "主合并实施完成后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。公司公告认为该变化不会对日常经营产生重大影响，但这一经营影响判断尚无独立财务数据验证。",
+      "times": {
+        "occurred_at": "2025-09-11",
+        "occurred_at_note": "以主合并换股股份完成登记作为权益承继的可验证实施节点；现有材料未提供单独的工商变更登记时间。",
+        "disclosed_at": "2025-09-12",
+        "fetched_at": "2026-10-05T14:48:00+08:00",
+        "analysis_updated_at": "2026-10-05T16:28:01+08:00"
+      },
+      "source_ids": ["src-008", "src-011", "src-012"],
+      "versions": [
+        {
+          "version": 1,
+          "label": "权益承继安排正式披露",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_execution",
+          "occurred_at": null,
+          "occurred_at_note": "公告披露的是主合并完成后拟发生的权益承继安排；该版本时主合并尚未实施，因此权益承继尚未实际发生。",
+          "disclosed_at": "2025-01-25",
+          "fetched_at": "2026-10-05T15:22:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "权益承继路径已经由正式公告确认，但仍依赖中国船舶吸收合并中国重工实际实施。公告同时说明中国动力控股股东、实际控制人不变；其关于日常经营影响的表述属于公司判断。",
+          "change_from_previous": null,
+          "source_ids": ["src-008"]
+        },
+        {
+          "version": 2,
+          "label": "权益承继随主合并实施完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "occurred_at": "2025-09-11",
+          "occurred_at_note": "以主合并换股股份完成登记作为可验证实施节点；现有材料未提供单独的工商变更登记时间。",
+          "disclosed_at": "2025-09-12",
+          "fetched_at": "2026-10-05T14:48:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国重工终止上市且主合并换股股份完成登记后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。经营和财务影响尚缺少独立量化验证。",
+          "change_from_previous": "权益承继由已披露但待主合并实施，更新为随主合并完成而实际完成；确认状态不变，执行状态由pending_execution变为completed。",
+          "source_ids": ["src-008", "src-011", "src-012"]
+        }
+      ]
+    },
+    {
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_type": "related_party_asset_acquisition",
+      "is_main_event": false,
+      "title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "company_ids": ["cmp-power", "cmp-cssc"],
+      "confirmation_status": "confirmed",
+      "execution_status": "terminated",
+      "current_conclusion": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回，不能再显示为仍在推进。终止的是资产收购事项，中国动力本身未因此终止上市，目前仍为正常交易状态。",
+      "times": {
+        "occurred_at": "2025-09-12",
+        "occurred_at_note": "以中国动力董事会审议通过终止交易并撤回申请的日期作为终止发生时间。",
+        "disclosed_at": "2025-09-13",
+        "fetched_at": "2026-10-05T14:39:00+08:00",
+        "analysis_updated_at": "2026-10-05T16:28:01+08:00"
+      },
+      "source_ids": ["src-013", "src-014"],
+      "versions": [
+        {
+          "version": 1,
+          "label": "交易筹划并停牌",
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "occurred_at": null,
+          "occurred_at_note": "公司开始筹划交易的实际日期未披露；2024-10-26对外公告，股票自2024-10-28起停牌。",
+          "disclosed_at": "2024-10-26",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国动力正式确认正在筹划发行可转换公司债券及支付现金购买中船柴油机16.5136%股权，交易仍处于筹划阶段并触发停牌。",
+          "change_from_previous": null,
+          "source_ids": ["src-014"]
+        },
+        {
+          "version": 2,
+          "label": "预案披露并复牌",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2024-11-08",
+          "occurred_at_note": "以董事会审议通过交易预案的日期作为该版本发生时间。",
+          "disclosed_at": "2024-11-09",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "董事会审议通过交易预案，股票安排于2024-11-11复牌；交易由筹划进入待审议、待审批阶段，尚未实施。",
+          "change_from_previous": "交易方案从筹划和停牌阶段进入预案公开阶段，执行状态由planning变为pending_approval，并安排复牌。",
+          "source_ids": ["src-014"]
+        },
+        {
+          "version": 3,
+          "label": "交易草案审议并继续推进",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-04-29",
+          "occurred_at_note": "以董事会审议通过交易报告书草案的日期作为该版本发生时间。",
+          "disclosed_at": "2025-04-30",
+          "fetched_at": "2026-10-05T14:38:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "交易报告书草案获得董事会审议并披露，标的、交易方式和交易价格等信息进一步明确，但交易仍需后续批准和审核。",
+          "change_from_previous": "由预案阶段推进至草案阶段，交易信息更完整；确认状态保持confirmed，执行状态仍为pending_approval。",
+          "source_ids": ["src-013", "src-014"]
+        },
+        {
+          "version": 4,
+          "label": "股东大会审议通过",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-05-23",
+          "occurred_at_note": "以股东大会审议通过本次交易相关议案的日期作为该版本发生时间。",
+          "disclosed_at": "2025-05-24",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "交易获得中国动力股东大会审议通过，但尚需交易所审核及监管注册等后续程序，不能视为已经实施。",
+          "change_from_previous": "公司内部决策由董事会草案阶段推进至股东大会通过，外部审核仍未完成。",
+          "source_ids": ["src-014"]
+        },
+        {
+          "version": 5,
+          "label": "上交所受理申请",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-06-30",
+          "occurred_at_note": "以交易申请获上海证券交易所受理的日期作为该版本发生时间。",
+          "disclosed_at": "2025-07-01",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "上交所已受理交易申请，交易进入审核程序；受理不等于审核通过或交易完成。",
+          "change_from_previous": "交易由股东大会通过推进至上交所受理，开始外部审核；执行状态仍为pending_approval。",
+          "source_ids": ["src-014"]
+        },
+        {
+          "version": 6,
+          "label": "审核中止",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-08-31",
+          "occurred_at_note": "因财务资料有效期届满，审核自该日起中止；该节点由后续终止公告回溯披露。",
+          "disclosed_at": "2025-09-13",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "因申请文件所引用财务资料有效期届满，上交所中止审核。中止并非审核否决，但交易暂不能继续完成审核。",
+          "change_from_previous": "审核流程从已受理转为中止，交易推进受阻；尚未终止，因此执行状态仍为pending_approval。",
+          "source_ids": ["src-014"]
+        },
+        {
+          "version": 7,
+          "label": "交易终止并撤回申请",
+          "confirmation_status": "confirmed",
+          "execution_status": "terminated",
+          "occurred_at": "2025-09-12",
+          "occurred_at_note": "以董事会审议通过终止交易并撤回申请的日期作为该版本发生时间。",
+          "disclosed_at": "2025-09-13",
+          "fetched_at": "2026-10-05T14:39:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回。中国动力本身未终止上市，目前仍为正常交易状态。",
+          "change_from_previous": "交易由审核中止变为公司决定终止并撤回申请，执行状态由pending_approval变为terminated；不能再表示为仍在推进。",
+          "source_ids": ["src-014"]
+        }
+      ]
+    },
+    {
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_type": "commitment_change",
+      "is_main_event": false,
+      "title": "中国船舶集团调整解决同业竞争承诺",
+      "company_ids": ["cmp-cssc", "cmp-csic"],
+      "confirmation_status": "confirmed",
+      "execution_status": "implementing",
+      "current_conclusion": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但沪东中华、黄埔文冲等其他集团资产和业务仍需按调整后的承诺继续安排，因此整体承诺仍在履行中，不能标记为全部完成。",
+      "times": {
+        "occurred_at": "2025-09-11",
+        "occurred_at_note": "以主合并换股股份完成登记作为核心同业竞争处理完成的可验证节点；剩余承诺仍在履行。",
+        "disclosed_at": "2025-09-12",
+        "fetched_at": "2026-10-05T14:48:00+08:00",
+        "analysis_updated_at": "2026-10-05T16:28:01+08:00"
+      },
+      "source_ids": ["src-002", "src-012", "src-015"],
+      "versions": [
+        {
+          "version": 1,
+          "label": "原同业竞争承诺形成",
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2021-06-30",
+          "occurred_at_note": "以中国船舶集团作出原同业竞争承诺的日期作为发生时间；本数据集现有可追溯来源为后续披露该承诺的2021年年度报告。",
+          "disclosed_at": "2022-04-29",
+          "fetched_at": "2026-10-05T14:25:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国船舶集团承诺在期限内通过资产重组、业务合并等方式解决同业竞争，但当时没有确定具体交易形式和对象。",
+          "change_from_previous": null,
+          "source_ids": ["src-002"]
+        },
+        {
+          "version": 2,
+          "label": "承诺调整并明确剩余安排",
+          "confirmation_status": "confirmed",
+          "execution_status": "implementing",
+          "occurred_at": null,
+          "occurred_at_note": "现有来源确认2025-01-25对外披露承诺调整，但不能独立确定内部决定或调整生效的准确发生时点。",
+          "disclosed_at": "2025-01-25",
+          "fetched_at": "2026-10-05T14:32:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "拟通过中国船舶吸收合并中国重工处理两者之间的核心同业竞争，同时对沪东中华、黄埔文冲等剩余集团资产和业务设置继续履行的后续安排。",
+          "change_from_previous": "从未确定具体形式的原则性承诺，更新为以主合并处理核心同业竞争并调整剩余事项安排；整体承诺进入实施阶段但尚未全部完成。",
+          "source_ids": ["src-015"]
+        },
+        {
+          "version": 3,
+          "label": "主合并完成、剩余承诺继续履行",
+          "confirmation_status": "confirmed",
+          "execution_status": "implementing",
+          "occurred_at": "2025-09-11",
+          "occurred_at_note": "以主合并换股股份完成登记作为中国船舶与中国重工核心同业竞争处理完成的可验证节点。",
+          "disclosed_at": "2025-09-12",
+          "fetched_at": "2026-10-05T14:48:00+08:00",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但其他集团资产和业务仍需按调整后的承诺继续安排，不能表述为全部同业竞争已经彻底解决。",
+          "change_from_previous": "主合并由拟实施变为已完成，核心同业竞争处理取得实施结果；剩余承诺继续履行，整体执行状态保持implementing。",
+          "source_ids": ["src-012", "src-015"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1065 @@
+{
+  "run_id": "material-analysis-001",
+  "generated_at": "2026-10-05T16:28:01+08:00",
+  "derivation": "deterministic_adjacent_version_diff",
+  "change_count": 15,
+  "notification_count": 15,
+  "changes": [
+    {
+      "change_id": "chg-evt-aux-cssc-noncompete-change-v1-v2",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "previous_version": 1,
+      "current_version": 2,
+      "current_version_label": "承诺调整并明确剩余安排",
+      "relation": "supplements",
+      "lifecycle_change": null,
+      "changed_at": "2025-01-25",
+      "previous_conclusion": "中国船舶集团承诺在期限内通过资产重组、业务合并等方式解决同业竞争，但当时没有确定具体交易形式和对象。",
+      "current_conclusion": "拟通过中国船舶吸收合并中国重工处理两者之间的核心同业竞争，同时对沪东中华、黄埔文冲等剩余集团资产和业务设置继续履行的后续安排。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "planning",
+      "execution_status_after": "implementing",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc"
+      ],
+      "source_ids": [
+        "src-015"
+      ],
+      "conclusion_delta": "从未确定具体形式的原则性承诺，更新为以主合并处理核心同业竞争并调整剩余事项安排；整体承诺进入实施阶段但尚未全部完成。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-aux-cssc-noncompete-change-v2-v3",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "previous_version": 2,
+      "current_version": 3,
+      "current_version_label": "主合并完成、剩余承诺继续履行",
+      "relation": "supplements",
+      "lifecycle_change": null,
+      "changed_at": "2025-09-12",
+      "previous_conclusion": "拟通过中国船舶吸收合并中国重工处理两者之间的核心同业竞争，同时对沪东中华、黄埔文冲等剩余集团资产和业务设置继续履行的后续安排。",
+      "current_conclusion": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但其他集团资产和业务仍需按调整后的承诺继续安排，不能表述为全部同业竞争已经彻底解决。",
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "implementing",
+      "execution_status_after": "implementing",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc"
+      ],
+      "source_ids": [
+        "src-012",
+        "src-015"
+      ],
+      "conclusion_delta": "主合并由拟实施变为已完成，核心同业竞争处理取得实施结果；剩余承诺继续履行，整体执行状态保持implementing。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v1-v2",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 1,
+      "current_version": 2,
+      "current_version_label": "预案披露并复牌",
+      "relation": "supersedes",
+      "lifecycle_change": null,
+      "changed_at": "2024-11-09",
+      "previous_conclusion": "中国动力正式确认正在筹划发行可转换公司债券及支付现金购买中船柴油机16.5136%股权，交易仍处于筹划阶段并触发停牌。",
+      "current_conclusion": "董事会审议通过交易预案，股票安排于2024-11-11复牌；交易由筹划进入待审议、待审批阶段，尚未实施。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "planning",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-014"
+      ],
+      "conclusion_delta": "交易方案从筹划和停牌阶段进入预案公开阶段，执行状态由planning变为pending_approval，并安排复牌。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v2-v3",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 2,
+      "current_version": 3,
+      "current_version_label": "交易草案审议并继续推进",
+      "relation": "supersedes",
+      "lifecycle_change": null,
+      "changed_at": "2025-04-30",
+      "previous_conclusion": "董事会审议通过交易预案，股票安排于2024-11-11复牌；交易由筹划进入待审议、待审批阶段，尚未实施。",
+      "current_conclusion": "交易报告书草案获得董事会审议并披露，标的、交易方式和交易价格等信息进一步明确，但交易仍需后续批准和审核。",
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-013",
+        "src-014"
+      ],
+      "conclusion_delta": "由预案阶段推进至草案阶段，交易信息更完整；确认状态保持confirmed，执行状态仍为pending_approval。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v3-v4",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 3,
+      "current_version": 4,
+      "current_version_label": "股东大会审议通过",
+      "relation": "supersedes",
+      "lifecycle_change": null,
+      "changed_at": "2025-05-24",
+      "previous_conclusion": "交易报告书草案获得董事会审议并披露，标的、交易方式和交易价格等信息进一步明确，但交易仍需后续批准和审核。",
+      "current_conclusion": "交易获得中国动力股东大会审议通过，但尚需交易所审核及监管注册等后续程序，不能视为已经实施。",
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-014"
+      ],
+      "conclusion_delta": "公司内部决策由董事会草案阶段推进至股东大会通过，外部审核仍未完成。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v4-v5",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 4,
+      "current_version": 5,
+      "current_version_label": "上交所受理申请",
+      "relation": "supersedes",
+      "lifecycle_change": null,
+      "changed_at": "2025-07-01",
+      "previous_conclusion": "交易获得中国动力股东大会审议通过，但尚需交易所审核及监管注册等后续程序，不能视为已经实施。",
+      "current_conclusion": "上交所已受理交易申请，交易进入审核程序；受理不等于审核通过或交易完成。",
+      "changed_fields": [
+        "conclusion"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-014"
+      ],
+      "conclusion_delta": "交易由股东大会通过推进至上交所受理，开始外部审核；执行状态仍为pending_approval。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v5-v6",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 5,
+      "current_version": 6,
+      "current_version_label": "审核中止",
+      "relation": "supersedes",
+      "lifecycle_change": null,
+      "changed_at": "2025-09-13",
+      "previous_conclusion": "上交所已受理交易申请，交易进入审核程序；受理不等于审核通过或交易完成。",
+      "current_conclusion": "因申请文件所引用财务资料有效期届满，上交所中止审核。中止并非审核否决，但交易暂不能继续完成审核。",
+      "changed_fields": [
+        "conclusion"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-014"
+      ],
+      "conclusion_delta": "审核流程从已受理转为中止，交易推进受阻；尚未终止，因此执行状态仍为pending_approval。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v6-v7",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "previous_version": 6,
+      "current_version": 7,
+      "current_version_label": "交易终止并撤回申请",
+      "relation": "supersedes",
+      "lifecycle_change": "terminated",
+      "changed_at": "2025-09-13",
+      "previous_conclusion": "因申请文件所引用财务资料有效期届满，上交所中止审核。中止并非审核否决，但交易暂不能继续完成审核。",
+      "current_conclusion": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回。中国动力本身未终止上市，目前仍为正常交易状态。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "terminated",
+      "affected_company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-014"
+      ],
+      "conclusion_delta": "交易由审核中止变为公司决定终止并撤回申请，执行状态由pending_approval变为terminated；不能再表示为仍在推进。",
+      "severity": "critical"
+    },
+    {
+      "change_id": "chg-evt-aux-power-rights-change-v1-v2",
+      "event_id": "evt-aux-power-rights-change",
+      "event_title": "主合并触发中国动力权益承继变化",
+      "previous_version": 1,
+      "current_version": 2,
+      "current_version_label": "权益承继随主合并实施完成",
+      "relation": "updates",
+      "lifecycle_change": "completed",
+      "changed_at": "2025-09-12",
+      "previous_conclusion": "权益承继路径已经由正式公告确认，但仍依赖中国船舶吸收合并中国重工实际实施。公告同时说明中国动力控股股东、实际控制人不变；其关于日常经营影响的表述属于公司判断。",
+      "current_conclusion": "中国重工终止上市且主合并换股股份完成登记后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。经营和财务影响尚缺少独立量化验证。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_execution",
+      "execution_status_after": "completed",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-008",
+        "src-011",
+        "src-012"
+      ],
+      "conclusion_delta": "权益承继由已披露但待主合并实施，更新为随主合并完成而实际完成；确认状态不变，执行状态由pending_execution变为completed。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v1-v2",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 1,
+      "current_version": 2,
+      "current_version_label": "集团战略重组得到部分确认",
+      "relation": "supports",
+      "lifecycle_change": null,
+      "changed_at": "2019-07-01",
+      "previous_conclusion": "“南船北船合并”已流传多年，但上市公司层面的中国船舶吸并中国重工并未被确认。",
+      "current_conclusion": "八家上市公司确认两大集团筹划战略性重组，但方案未定；这不能等同于两家上市公司吸收合并。",
+      "changed_fields": [
+        "conclusion",
+        "confirmation_status",
+        "execution_status"
+      ],
+      "confirmation_status_before": "rumor",
+      "confirmation_status_after": "partially_confirmed",
+      "execution_status_before": "not_started",
+      "execution_status_after": "planning",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-001"
+      ],
+      "conclusion_delta": "从纯传闻更新为集团战略重组部分确认。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v2-v3",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 2,
+      "current_version": 3,
+      "current_version_label": "解决同业竞争的方向确认",
+      "relation": "supplements",
+      "lifecycle_change": null,
+      "changed_at": "2021-07-09",
+      "previous_conclusion": "八家上市公司确认两大集团筹划战略性重组，但方案未定；这不能等同于两家上市公司吸收合并。",
+      "current_conclusion": "中国船舶集团承诺五年内通过资产重组、业务合并等方式解决同业竞争，但没有锁定具体交易形式和对象。",
+      "changed_fields": [
+        "conclusion",
+        "source_ids"
+      ],
+      "confirmation_status_before": "partially_confirmed",
+      "confirmation_status_after": "partially_confirmed",
+      "execution_status_before": "planning",
+      "execution_status_after": "planning",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-002"
+      ],
+      "conclusion_delta": "新增正式承诺和2026年前的期限约束。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v3-v4",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 3,
+      "current_version": 4,
+      "current_version_label": "吸并方向正式确认、细节待定",
+      "relation": "supplements",
+      "lifecycle_change": null,
+      "changed_at": "2024-09-02T18:00:00+08:00",
+      "previous_conclusion": "中国船舶集团承诺五年内通过资产重组、业务合并等方式解决同业竞争，但没有锁定具体交易形式和对象。",
+      "current_conclusion": "中国船舶拟发行A股换股吸收合并中国重工，9月3日起停牌；换股价格、比例和最终审批均未确定。",
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "partially_confirmed",
+      "confirmation_status_after": "partially_confirmed",
+      "execution_status_before": "planning",
+      "execution_status_after": "planning",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-003",
+        "src-004",
+        "src-005"
+      ],
+      "conclusion_delta": "新增长期协同的机构支持观点。",
+      "severity": "notable"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v4-v5",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 4,
+      "current_version": 5,
+      "current_version_label": "预案与换股比例披露",
+      "relation": "supplements",
+      "lifecycle_change": null,
+      "changed_at": "2024-09-18T18:00:00+08:00",
+      "previous_conclusion": "中国船舶拟发行A股换股吸收合并中国重工，9月3日起停牌；换股价格、比例和最终审批均未确定。",
+      "current_conclusion": "董事会通过预案，初始换股比例为每1股中国重工换0.1335股中国船舶；交易仍需国资、交易所和证监会程序。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "confirmation_status_before": "partially_confirmed",
+      "confirmation_status_after": "partially_confirmed",
+      "execution_status_before": "planning",
+      "execution_status_after": "pending_approval",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-006",
+        "src-007"
+      ],
+      "conclusion_delta": "事件状态继续推进，但市场反应由“预期偏正面”更正为明显分化。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v5-v6",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 5,
+      "current_version": 6,
+      "current_version_label": "监管注册完成",
+      "relation": "supports",
+      "lifecycle_change": null,
+      "changed_at": "2025-07-18",
+      "previous_conclusion": "董事会通过预案，初始换股比例为每1股中国重工换0.1335股中国船舶；交易仍需国资、交易所和证监会程序。",
+      "current_conclusion": "中国证监会同意吸收合并注册，核心监管不确定性消除，但换股与股份登记尚待实施。",
+      "changed_fields": [
+        "conclusion",
+        "confirmation_status",
+        "execution_status",
+        "source_ids"
+      ],
+      "confirmation_status_before": "partially_confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_approval",
+      "execution_status_after": "pending_execution",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-009",
+        "src-010"
+      ],
+      "conclusion_delta": "从有条件交易更新为监管批准。",
+      "severity": "important"
+    },
+    {
+      "change_id": "chg-evt-main-cssc-csic-merger-v6-v7",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "previous_version": 6,
+      "current_version": 7,
+      "current_version_label": "终止上市与换股实施完成",
+      "relation": "updates",
+      "lifecycle_change": "completed",
+      "changed_at": "2025-09-12",
+      "previous_conclusion": "中国证监会同意吸收合并注册，核心监管不确定性消除，但换股与股份登记尚待实施。",
+      "current_conclusion": "中国重工9月5日终止上市；最终实施比例更新为1:0.1339，替代预案阶段的1:0.1335；9月11日完成登记，新增股份9月16日上市。",
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids"
+      ],
+      "confirmation_status_before": "confirmed",
+      "confirmation_status_after": "confirmed",
+      "execution_status_before": "pending_execution",
+      "execution_status_after": "completed",
+      "affected_company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "source_ids": [
+        "src-011",
+        "src-012"
+      ],
+      "conclusion_delta": "确认状态保持为已确认；执行状态从待实施更新为已完成。最终实施比例1:0.1339替代预案比例1:0.1335，并不表示预案披露错误。",
+      "severity": "important"
+    }
+  ],
+  "notifications": [
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v6-v7",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v6-v7",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 7,
+      "title": "交易终止：交易终止并撤回申请",
+      "summary": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回。中国动力本身未终止上市，目前仍为正常交易状态。",
+      "reason": "交易由审核中止变为公司决定终止并撤回申请，执行状态由pending_approval变为terminated；不能再表示为仍在推进。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes",
+        "terminated"
+      ],
+      "severity": "critical",
+      "changed_at": "2025-09-13",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待审核",
+      "current_state": "确认：已确认；执行：已终止",
+      "source_ids": [
+        "src-014"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "execution_status"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v5-v6",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v5-v6",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 6,
+      "title": "阶段推进：审核中止",
+      "summary": "因申请文件所引用财务资料有效期届满，上交所中止审核。中止并非审核否决，但交易暂不能继续完成审核。",
+      "reason": "审核流程从已受理转为中止，交易推进受阻；尚未终止，因此执行状态仍为pending_approval。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes"
+      ],
+      "severity": "notable",
+      "changed_at": "2025-09-13",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待审核",
+      "current_state": "确认：已确认；执行：待审核",
+      "source_ids": [
+        "src-014"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v6-v7",
+      "change_id": "chg-evt-main-cssc-csic-merger-v6-v7",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 7,
+      "title": "实施完成：终止上市与换股实施完成",
+      "summary": "中国重工9月5日终止上市；最终实施比例更新为1:0.1339，替代预案阶段的1:0.1335；9月11日完成登记，新增股份9月16日上市。",
+      "reason": "确认状态保持为已确认；执行状态从待实施更新为已完成。最终实施比例1:0.1339替代预案比例1:0.1335，并不表示预案披露错误。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "updates",
+        "completed"
+      ],
+      "severity": "important",
+      "changed_at": "2025-09-12",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待实施",
+      "current_state": "确认：已确认；执行：已完成",
+      "source_ids": [
+        "src-011",
+        "src-012"
+      ],
+      "source_count": 2,
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-cssc-noncompete-change-v2-v3",
+      "change_id": "chg-evt-aux-cssc-noncompete-change-v2-v3",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "current_version": 3,
+      "title": "信息补充：主合并完成、剩余承诺继续履行",
+      "summary": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但其他集团资产和业务仍需按调整后的承诺继续安排，不能表述为全部同业竞争已经彻底解决。",
+      "reason": "主合并由拟实施变为已完成，核心同业竞争处理取得实施结果；剩余承诺继续履行，整体执行状态保持implementing。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supplements"
+      ],
+      "severity": "notable",
+      "changed_at": "2025-09-12",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶"
+      ],
+      "previous_state": "确认：已确认；执行：履行中",
+      "current_state": "确认：已确认；执行：履行中",
+      "source_ids": [
+        "src-012",
+        "src-015"
+      ],
+      "source_count": 2,
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-rights-change-v1-v2",
+      "change_id": "chg-evt-aux-power-rights-change-v1-v2",
+      "event_id": "evt-aux-power-rights-change",
+      "event_title": "主合并触发中国动力权益承继变化",
+      "current_version": 2,
+      "title": "实施完成：权益承继随主合并实施完成",
+      "summary": "中国重工终止上市且主合并换股股份完成登记后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。经营和财务影响尚缺少独立量化验证。",
+      "reason": "权益承继由已披露但待主合并实施，更新为随主合并完成而实际完成；确认状态不变，执行状态由pending_execution变为completed。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "updates",
+        "completed"
+      ],
+      "severity": "important",
+      "changed_at": "2025-09-12",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待实施",
+      "current_state": "确认：已确认；执行：已完成",
+      "source_ids": [
+        "src-008",
+        "src-011",
+        "src-012"
+      ],
+      "source_count": 3,
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v5-v6",
+      "change_id": "chg-evt-main-cssc-csic-merger-v5-v6",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 6,
+      "title": "新增支持证据：监管注册完成",
+      "summary": "中国证监会同意吸收合并注册，核心监管不确定性消除，但换股与股份登记尚待实施。",
+      "reason": "从有条件交易更新为监管批准。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supports"
+      ],
+      "severity": "important",
+      "changed_at": "2025-07-18",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：部分确认；执行：待审核",
+      "current_state": "确认：已确认；执行：待实施",
+      "source_ids": [
+        "src-009",
+        "src-010"
+      ],
+      "source_count": 2,
+      "changed_fields": [
+        "conclusion",
+        "confirmation_status",
+        "execution_status",
+        "source_ids"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v4-v5",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v4-v5",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 5,
+      "title": "阶段推进：上交所受理申请",
+      "summary": "上交所已受理交易申请，交易进入审核程序；受理不等于审核通过或交易完成。",
+      "reason": "交易由股东大会通过推进至上交所受理，开始外部审核；执行状态仍为pending_approval。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes"
+      ],
+      "severity": "notable",
+      "changed_at": "2025-07-01",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待审核",
+      "current_state": "确认：已确认；执行：待审核",
+      "source_ids": [
+        "src-014"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v3-v4",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v3-v4",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 4,
+      "title": "阶段推进：股东大会审议通过",
+      "summary": "交易获得中国动力股东大会审议通过，但尚需交易所审核及监管注册等后续程序，不能视为已经实施。",
+      "reason": "公司内部决策由董事会草案阶段推进至股东大会通过，外部审核仍未完成。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes"
+      ],
+      "severity": "notable",
+      "changed_at": "2025-05-24",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待审核",
+      "current_state": "确认：已确认；执行：待审核",
+      "source_ids": [
+        "src-014"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v2-v3",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v2-v3",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 3,
+      "title": "阶段推进：交易草案审议并继续推进",
+      "summary": "交易报告书草案获得董事会审议并披露，标的、交易方式和交易价格等信息进一步明确，但交易仍需后续批准和审核。",
+      "reason": "由预案阶段推进至草案阶段，交易信息更完整；确认状态保持confirmed，执行状态仍为pending_approval。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：混合。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes"
+      ],
+      "severity": "notable",
+      "changed_at": "2025-04-30",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：待审核",
+      "current_state": "确认：已确认；执行：待审核",
+      "source_ids": [
+        "src-013",
+        "src-014"
+      ],
+      "source_count": 2,
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-cssc-noncompete-change-v1-v2",
+      "change_id": "chg-evt-aux-cssc-noncompete-change-v1-v2",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "current_version": 2,
+      "title": "信息补充：承诺调整并明确剩余安排",
+      "summary": "拟通过中国船舶吸收合并中国重工处理两者之间的核心同业竞争，同时对沪东中华、黄埔文冲等剩余集团资产和业务设置继续履行的后续安排。",
+      "reason": "从未确定具体形式的原则性承诺，更新为以主合并处理核心同业竞争并调整剩余事项安排；整体承诺进入实施阶段但尚未全部完成。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：利多。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supplements"
+      ],
+      "severity": "important",
+      "changed_at": "2025-01-25",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶"
+      ],
+      "previous_state": "确认：已确认；执行：筹划中",
+      "current_state": "确认：已确认；执行：履行中",
+      "source_ids": [
+        "src-015"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-aux-power-diesel-acquisition-v1-v2",
+      "change_id": "chg-evt-aux-power-diesel-acquisition-v1-v2",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "current_version": 2,
+      "title": "阶段推进：预案披露并复牌",
+      "summary": "董事会审议通过交易预案，股票安排于2024-11-11复牌；交易由筹划进入待审议、待审批阶段，尚未实施。",
+      "reason": "交易方案从筹划和停牌阶段进入预案公开阶段，执行状态由planning变为pending_approval，并安排复牌。",
+      "meaning": "本版本的逐公司判断为中国动力：混合；中国船舶：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supersedes"
+      ],
+      "severity": "important",
+      "changed_at": "2024-11-09",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：已确认；执行：筹划中",
+      "current_state": "确认：已确认；执行：待审核",
+      "source_ids": [
+        "src-014"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "execution_status"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v4-v5",
+      "change_id": "chg-evt-main-cssc-csic-merger-v4-v5",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 5,
+      "title": "信息补充：预案与换股比例披露",
+      "summary": "董事会通过预案，初始换股比例为每1股中国重工换0.1335股中国船舶；交易仍需国资、交易所和证监会程序。",
+      "reason": "事件状态继续推进，但市场反应由“预期偏正面”重新评估为明显分化。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supplements"
+      ],
+      "severity": "important",
+      "changed_at": "2024-09-18T18:00:00+08:00",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：部分确认；执行：筹划中",
+      "current_state": "确认：部分确认；执行：待审核",
+      "source_ids": [
+        "src-006",
+        "src-007"
+      ],
+      "source_count": 2,
+      "changed_fields": [
+        "conclusion",
+        "execution_status",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v3-v4",
+      "change_id": "chg-evt-main-cssc-csic-merger-v3-v4",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 4,
+      "title": "信息补充：吸并方向正式确认、细节待定",
+      "summary": "中国船舶拟发行A股换股吸收合并中国重工，9月3日起停牌；换股价格、比例和最终审批均未确定。",
+      "reason": "新增长期协同的机构支持观点。",
+      "meaning": "本版本的逐公司判断为中国船舶：混合；中国重工：混合；中国动力：利多。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supplements"
+      ],
+      "severity": "notable",
+      "changed_at": "2024-09-02T18:00:00+08:00",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：部分确认；执行：筹划中",
+      "current_state": "确认：部分确认；执行：筹划中",
+      "source_ids": [
+        "src-003",
+        "src-004",
+        "src-005"
+      ],
+      "source_count": 3,
+      "changed_fields": [
+        "conclusion",
+        "source_ids",
+        "impact_by_company"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v2-v3",
+      "change_id": "chg-evt-main-cssc-csic-merger-v2-v3",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 3,
+      "title": "信息补充：解决同业竞争的方向确认",
+      "summary": "中国船舶集团承诺五年内通过资产重组、业务合并等方式解决同业竞争，但没有锁定具体交易形式和对象。",
+      "reason": "新增正式承诺和2026年前的期限约束。",
+      "meaning": "本版本的逐公司判断为中国船舶：暂不明确；中国重工：暂不明确；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supplements"
+      ],
+      "severity": "notable",
+      "changed_at": "2021-07-09",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：部分确认；执行：筹划中",
+      "current_state": "确认：部分确认；执行：筹划中",
+      "source_ids": [
+        "src-002"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "source_ids"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    },
+    {
+      "notification_id": "ntf-chg-evt-main-cssc-csic-merger-v1-v2",
+      "change_id": "chg-evt-main-cssc-csic-merger-v1-v2",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "current_version": 2,
+      "title": "新增支持证据：集团战略重组得到部分确认",
+      "summary": "八家上市公司确认两大集团筹划战略性重组，但方案未定；这不能等同于两家上市公司吸收合并。",
+      "reason": "从纯传闻更新为集团战略重组部分确认。",
+      "meaning": "本版本的逐公司判断为中国船舶：暂不明确；中国重工：暂不明确；中国动力：暂不明确。重要程度只表示需要关注，不代表收益方向。",
+      "change_types": [
+        "supports"
+      ],
+      "severity": "important",
+      "changed_at": "2019-07-01",
+      "company_ids": [
+        "cmp-csic",
+        "cmp-cssc",
+        "cmp-power"
+      ],
+      "company_names": [
+        "中国重工",
+        "中国船舶",
+        "中国动力"
+      ],
+      "previous_state": "确认：传闻；执行：未开始",
+      "current_state": "确认：部分确认；执行：筹划中",
+      "source_ids": [
+        "src-001"
+      ],
+      "source_count": 1,
+      "changed_fields": [
+        "conclusion",
+        "confirmation_status",
+        "execution_status"
+      ],
+      "target_tab": "versions",
+      "is_rule_fixture": false
+    }
+  ]
+}

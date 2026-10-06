@@ -1,0 +1,2532 @@
+{
+  "run_id": "material-analysis-001",
+  "prompt_version": "material-analysis-v1",
+  "model_name": "unknown",
+  "generated_at": "2026-10-05T16:18:00+08:00",
+  "event_clusters": [
+    {
+      "cluster_id": "cluster-001",
+      "event_id": "evt-main-cssc-csic-merger",
+      "event_title": "中国船舶换股吸收合并中国重工",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic",
+        "cmp-power"
+      ],
+      "current_conclusion": "换股吸收合并已实施完成。中国重工于2025-09-05终止上市；换股股份于2025-09-11完成登记，中国船舶新增股份于2025-09-16上市。中国动力的直接股东权益承继关系随之变化。",
+      "confirmation_status": "confirmed",
+      "execution_status": "completed",
+      "relation_to_previous": "supplements",
+      "source_ids": [
+        "src-001",
+        "src-002",
+        "src-003",
+        "src-004",
+        "src-005",
+        "src-006",
+        "src-007",
+        "src-008",
+        "src-009",
+        "src-010",
+        "src-011",
+        "src-012",
+        "src-016",
+        "src-017"
+      ],
+      "claim_ids": [
+        "claim-src-001-01",
+        "claim-src-001-02",
+        "claim-src-001-03",
+        "claim-src-002-01",
+        "claim-src-002-02",
+        "claim-src-003-01",
+        "claim-src-003-02",
+        "claim-src-003-03",
+        "claim-src-004-01",
+        "claim-src-004-02",
+        "claim-src-004-03",
+        "claim-src-005-01",
+        "claim-src-005-02",
+        "claim-src-006-01",
+        "claim-src-006-02",
+        "claim-src-007-01",
+        "claim-src-007-02",
+        "claim-src-007-03",
+        "claim-src-008-01",
+        "claim-src-008-02",
+        "claim-src-008-03",
+        "claim-src-008-04",
+        "claim-src-009-01",
+        "claim-src-009-02",
+        "claim-src-010-01",
+        "claim-src-011-01",
+        "claim-src-011-02",
+        "claim-src-012-01",
+        "claim-src-012-02",
+        "claim-src-012-03",
+        "claim-src-016-01",
+        "claim-src-016-02",
+        "claim-src-016-03",
+        "claim-src-017-01",
+        "claim-src-017-02"
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "label": "长期市场传闻",
+          "confirmation_status": "rumor",
+          "execution_status": "not_started",
+          "occurred_at": null,
+          "disclosed_at": "2019-07-02T09:44:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:35:00+08:00",
+          "conclusion": "“南船北船合并”已流传多年，但上市公司层面的中国船舶吸并中国重工并未被确认。",
+          "relation_to_previous": null,
+          "conclusion_delta": "从纯传闻更新为集团战略重组部分确认。",
+          "source_ids": [
+            "src-001"
+          ],
+          "claim_ids": [
+            "claim-src-001-01",
+            "claim-src-001-02",
+            "claim-src-001-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            }
+          ]
+        },
+        {
+          "version": 2,
+          "label": "集团战略重组得到部分确认",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2019-07-01",
+          "disclosed_at": "2019-07-01",
+          "analysis_updated_at": "2026-10-05T14:35:00+08:00",
+          "conclusion": "八家上市公司确认两大集团筹划战略性重组，但方案未定；这不能等同于两家上市公司吸收合并。",
+          "relation_to_previous": "supports",
+          "conclusion_delta": "从纯传闻更新为集团战略重组部分确认。",
+          "source_ids": [
+            "src-001"
+          ],
+          "claim_ids": [
+            "claim-src-001-01",
+            "claim-src-001-02",
+            "claim-src-001-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-001-01",
+                "claim-src-001-02",
+                "claim-src-001-03"
+              ],
+              "source_ids": [
+                "src-001"
+              ]
+            }
+          ]
+        },
+        {
+          "version": 3,
+          "label": "解决同业竞争的方向确认",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2021-06-30",
+          "disclosed_at": "2021-07-09",
+          "analysis_updated_at": "2026-10-05T14:38:00+08:00",
+          "conclusion": "中国船舶集团承诺五年内通过资产重组、业务合并等方式解决同业竞争，但没有锁定具体交易形式和对象。",
+          "relation_to_previous": "supplements",
+          "conclusion_delta": "新增正式承诺和2026年前的期限约束。",
+          "source_ids": [
+            "src-002"
+          ],
+          "claim_ids": [
+            "claim-src-002-01",
+            "claim-src-002-02"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-002-01",
+                "claim-src-002-02"
+              ],
+              "source_ids": [
+                "src-002"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-002-01",
+                "claim-src-002-02"
+              ],
+              "source_ids": [
+                "src-002"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-002-01",
+                "claim-src-002-02"
+              ],
+              "source_ids": [
+                "src-002"
+              ]
+            }
+          ]
+        },
+        {
+          "version": 4,
+          "label": "吸并方向正式确认、细节待定",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "planning",
+          "occurred_at": null,
+          "disclosed_at": "2024-09-02T18:00:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:40:00+08:00",
+          "conclusion": "中国船舶拟发行A股换股吸收合并中国重工，9月3日起停牌；换股价格、比例和最终审批均未确定。",
+          "relation_to_previous": "supplements",
+          "conclusion_delta": "新增长期协同的机构支持观点。",
+          "source_ids": [
+            "src-003",
+            "src-004",
+            "src-005"
+          ],
+          "claim_ids": [
+            "claim-src-003-01",
+            "claim-src-003-02",
+            "claim-src-003-03",
+            "claim-src-004-01",
+            "claim-src-004-02",
+            "claim-src-004-03",
+            "claim-src-005-01",
+            "claim-src-005-02"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "可能消除同业竞争，但换股比例、整合成本、审批和停牌流动性风险未知。"
+              ],
+              "negative_factors": [
+                "中国动力作为中船系标的受板块预期带动，但专家明确提示分化；对停牌双方无法观察即时个股反应。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-003-01",
+                "claim-src-003-02",
+                "claim-src-003-03",
+                "claim-src-004-01",
+                "claim-src-004-02",
+                "claim-src-004-03",
+                "claim-src-005-01",
+                "claim-src-005-02"
+              ],
+              "source_ids": [
+                "src-003",
+                "src-004",
+                "src-005"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "可能消除同业竞争，但换股比例、整合成本、审批和停牌流动性风险未知。"
+              ],
+              "negative_factors": [
+                "中国动力作为中船系标的受板块预期带动，但专家明确提示分化；对停牌双方无法观察即时个股反应。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-003-01",
+                "claim-src-003-02",
+                "claim-src-003-03",
+                "claim-src-004-01",
+                "claim-src-004-02",
+                "claim-src-004-03",
+                "claim-src-005-01",
+                "claim-src-005-02"
+              ],
+              "source_ids": [
+                "src-003",
+                "src-004",
+                "src-005"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "positive",
+              "positive_factors": [
+                "可能消除同业竞争，但换股比例、整合成本、审批和停牌流动性风险未知。",
+                "中国动力作为中船系标的受板块预期带动，但专家明确提示分化；对停牌双方无法观察即时个股反应。",
+                "对吸并双方的长期协同方向偏正面，但没有量化兑现；对中国动力没有直接结论。"
+              ],
+              "negative_factors": [],
+              "uncertainties": [],
+              "confidence": 0.82,
+              "basis_claim_ids": [
+                "claim-src-003-01",
+                "claim-src-003-02",
+                "claim-src-003-03",
+                "claim-src-004-01",
+                "claim-src-004-02",
+                "claim-src-004-03",
+                "claim-src-005-01",
+                "claim-src-005-02"
+              ],
+              "source_ids": [
+                "src-003",
+                "src-004",
+                "src-005"
+              ]
+            }
+          ],
+          "occurred_at_note": "两公司开始初步磋商的日期未公开。"
+        },
+        {
+          "version": 5,
+          "label": "预案与换股比例披露",
+          "confirmation_status": "partially_confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2024-09-18",
+          "disclosed_at": "2024-09-18T18:00:00+08:00",
+          "analysis_updated_at": "2026-10-05T14:42:00+08:00",
+          "conclusion": "董事会通过预案，初始换股比例为每1股中国重工换0.1335股中国船舶；交易仍需国资、交易所和证监会程序。",
+          "relation_to_previous": "supplements",
+          "conclusion_delta": "事件状态继续推进，但市场反应由“预期偏正面”更正为明显分化。",
+          "source_ids": [
+            "src-006",
+            "src-007"
+          ],
+          "claim_ids": [
+            "claim-src-006-01",
+            "claim-src-006-02",
+            "claim-src-007-01",
+            "claim-src-007-02",
+            "claim-src-007-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "方案清晰度提高，但仍需审批且存在换股定价和整合风险。"
+              ],
+              "negative_factors": [
+                "中国船舶收盘仍涨3.32%，中国重工跌2.41%；两者方向分化，不能统一标为利好。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-006-01",
+                "claim-src-006-02",
+                "claim-src-007-01",
+                "claim-src-007-02",
+                "claim-src-007-03"
+              ],
+              "source_ids": [
+                "src-006",
+                "src-007"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "方案清晰度提高，但仍需审批且存在换股定价和整合风险。"
+              ],
+              "negative_factors": [
+                "中国船舶收盘仍涨3.32%，中国重工跌2.41%；两者方向分化，不能统一标为利好。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-006-01",
+                "claim-src-006-02",
+                "claim-src-007-01",
+                "claim-src-007-02",
+                "claim-src-007-03"
+              ],
+              "source_ids": [
+                "src-006",
+                "src-007"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "方案清晰度提高，但仍需审批且存在换股定价和整合风险。",
+                "中国船舶收盘仍涨3.32%，中国重工跌2.41%；两者方向分化，不能统一标为利好。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-006-01",
+                "claim-src-006-02",
+                "claim-src-007-01",
+                "claim-src-007-02",
+                "claim-src-007-03"
+              ],
+              "source_ids": [
+                "src-006",
+                "src-007"
+              ]
+            }
+          ]
+        },
+        {
+          "version": 6,
+          "label": "监管注册完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_execution",
+          "occurred_at": "2025-07-18",
+          "disclosed_at": "2025-07-18",
+          "analysis_updated_at": "2026-10-05T14:47:00+08:00",
+          "conclusion": "中国证监会同意吸收合并注册，核心监管不确定性消除，但换股与股份登记尚待实施。",
+          "relation_to_previous": "supports",
+          "conclusion_delta": "从有条件交易更新为监管批准。",
+          "source_ids": [
+            "src-009",
+            "src-010"
+          ],
+          "claim_ids": [
+            "claim-src-009-01",
+            "claim-src-009-02",
+            "claim-src-010-01"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "产业整合价值与审批、执行、摊薄、整合风险并存。"
+              ],
+              "negative_factors": [
+                "对完成概率构成明确正面更新；具体市场价格与最终整合价值仍需另看。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-009-01",
+                "claim-src-009-02",
+                "claim-src-010-01"
+              ],
+              "source_ids": [
+                "src-009",
+                "src-010"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "产业整合价值与审批、执行、摊薄、整合风险并存。"
+              ],
+              "negative_factors": [
+                "对完成概率构成明确正面更新；具体市场价格与最终整合价值仍需另看。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-009-01",
+                "claim-src-009-02",
+                "claim-src-010-01"
+              ],
+              "source_ids": [
+                "src-009",
+                "src-010"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "产业整合价值与审批、执行、摊薄、整合风险并存。",
+                "对完成概率构成明确正面更新；具体市场价格与最终整合价值仍需另看。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-009-01",
+                "claim-src-009-02",
+                "claim-src-010-01"
+              ],
+              "source_ids": [
+                "src-009",
+                "src-010"
+              ]
+            }
+          ]
+        },
+        {
+          "version": 7,
+          "label": "终止上市与换股实施完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "occurred_at": "2025-09-11",
+          "disclosed_at": "2025-09-12",
+          "analysis_updated_at": "2026-10-05T15:33:00+08:00",
+          "conclusion": "中国重工9月5日终止上市；最终实施比例更新为1:0.1339，替代预案阶段的1:0.1335；9月11日完成登记，新增股份9月16日上市。",
+          "relation_to_previous": "updates",
+          "conclusion_delta": "确认状态保持为已确认；执行状态从待实施更新为已完成。最终实施比例1:0.1339替代预案比例1:0.1335，并不表示预案披露错误。",
+          "source_ids": [
+            "src-011",
+            "src-012"
+          ],
+          "claim_ids": [
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+              ],
+              "negative_factors": [
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-011",
+                "src-012"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+              ],
+              "negative_factors": [
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-011",
+                "src-012"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。",
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-011",
+                "src-012"
+              ]
+            }
+          ]
+        }
+      ],
+      "impact_by_company": [
+        {
+          "company_id": "cmp-cssc",
+          "direction": "mixed",
+          "positive_factors": [
+            "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+          ],
+          "negative_factors": [
+            "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-001-01",
+            "claim-src-001-02",
+            "claim-src-001-03",
+            "claim-src-002-01",
+            "claim-src-002-02",
+            "claim-src-003-01",
+            "claim-src-003-02",
+            "claim-src-003-03",
+            "claim-src-004-01",
+            "claim-src-004-02",
+            "claim-src-004-03",
+            "claim-src-005-01",
+            "claim-src-005-02",
+            "claim-src-006-01",
+            "claim-src-006-02",
+            "claim-src-007-01",
+            "claim-src-007-02",
+            "claim-src-007-03",
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-009-01",
+            "claim-src-009-02",
+            "claim-src-010-01",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-016-01",
+            "claim-src-016-02",
+            "claim-src-016-03",
+            "claim-src-017-01",
+            "claim-src-017-02"
+          ],
+          "source_ids": [
+            "src-001",
+            "src-002",
+            "src-003",
+            "src-004",
+            "src-005",
+            "src-006",
+            "src-007",
+            "src-008",
+            "src-009",
+            "src-010",
+            "src-011",
+            "src-012",
+            "src-016",
+            "src-017"
+          ]
+        },
+        {
+          "company_id": "cmp-csic",
+          "direction": "mixed",
+          "positive_factors": [
+            "只有集团层面方向，上市公司资产、对价与实施路径均未知。"
+          ],
+          "negative_factors": [
+            "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-001-01",
+            "claim-src-001-02",
+            "claim-src-001-03",
+            "claim-src-002-01",
+            "claim-src-002-02",
+            "claim-src-003-01",
+            "claim-src-003-02",
+            "claim-src-003-03",
+            "claim-src-004-01",
+            "claim-src-004-02",
+            "claim-src-004-03",
+            "claim-src-005-01",
+            "claim-src-005-02",
+            "claim-src-006-01",
+            "claim-src-006-02",
+            "claim-src-007-01",
+            "claim-src-007-02",
+            "claim-src-007-03",
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-009-01",
+            "claim-src-009-02",
+            "claim-src-010-01",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-016-01",
+            "claim-src-016-02",
+            "claim-src-016-03",
+            "claim-src-017-01",
+            "claim-src-017-02"
+          ],
+          "source_ids": [
+            "src-001",
+            "src-002",
+            "src-003",
+            "src-004",
+            "src-005",
+            "src-006",
+            "src-007",
+            "src-008",
+            "src-009",
+            "src-010",
+            "src-011",
+            "src-012",
+            "src-016",
+            "src-017"
+          ]
+        },
+        {
+          "company_id": "cmp-power",
+          "direction": "positive",
+          "positive_factors": [
+            "只有集团层面方向，上市公司资产、对价与实施路径均未知。",
+            "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。",
+            "可能消除同业竞争，但换股比例、整合成本、审批和停牌流动性风险未知。",
+            "中国动力作为中船系标的受板块预期带动，但专家明确提示分化；对停牌双方无法观察即时个股反应。",
+            "对吸并双方的长期协同方向偏正面，但没有量化兑现；对中国动力没有直接结论。",
+            "方案清晰度提高，但仍需审批且存在换股定价和整合风险。",
+            "中国船舶收盘仍涨3.32%，中国重工跌2.41%；两者方向分化，不能统一标为利好。",
+            "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。",
+            "产业整合价值与审批、执行、摊薄、整合风险并存。",
+            "对完成概率构成明确正面更新；具体市场价格与最终整合价值仍需另看。",
+            "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。",
+            "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。",
+            "连续停牌是现金选择权、清算交收和换股实施安排，带来阶段性不可交易，但不能单独判断经营利好或利空。",
+            "该数据仅用于交易状态上下文，不据此作利好或利空判断。"
+          ],
+          "negative_factors": [],
+          "uncertainties": [],
+          "confidence": 0.82,
+          "basis_claim_ids": [
+            "claim-src-001-01",
+            "claim-src-001-02",
+            "claim-src-001-03",
+            "claim-src-002-01",
+            "claim-src-002-02",
+            "claim-src-003-01",
+            "claim-src-003-02",
+            "claim-src-003-03",
+            "claim-src-004-01",
+            "claim-src-004-02",
+            "claim-src-004-03",
+            "claim-src-005-01",
+            "claim-src-005-02",
+            "claim-src-006-01",
+            "claim-src-006-02",
+            "claim-src-007-01",
+            "claim-src-007-02",
+            "claim-src-007-03",
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-009-01",
+            "claim-src-009-02",
+            "claim-src-010-01",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-016-01",
+            "claim-src-016-02",
+            "claim-src-016-03",
+            "claim-src-017-01",
+            "claim-src-017-02"
+          ],
+          "source_ids": [
+            "src-001",
+            "src-002",
+            "src-003",
+            "src-004",
+            "src-005",
+            "src-006",
+            "src-007",
+            "src-008",
+            "src-009",
+            "src-010",
+            "src-011",
+            "src-012",
+            "src-016",
+            "src-017"
+          ]
+        }
+      ],
+      "confidence": 0.98,
+      "conclusion_delta": "新增停牌前价格锚点，不改变主事件结论。",
+      "warnings": [
+        "影响方向是基于材料的演示性判断，不是收益预测。",
+        "市场反应仅表示披露附近观察，不能证明事件因果或已完全定价。"
+      ]
+    },
+    {
+      "cluster_id": "cluster-002",
+      "event_id": "evt-aux-power-rights-change",
+      "event_title": "主合并触发中国动力权益承继变化",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic",
+        "cmp-power"
+      ],
+      "current_conclusion": "主合并实施完成后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。公司公告认为该变化不会对日常经营产生重大影响，但这一经营影响判断尚无独立财务数据验证。",
+      "confirmation_status": "confirmed",
+      "execution_status": "completed",
+      "relation_to_previous": "updates",
+      "source_ids": [
+        "src-008",
+        "src-011",
+        "src-012"
+      ],
+      "claim_ids": [
+        "claim-src-008-01",
+        "claim-src-008-02",
+        "claim-src-008-03",
+        "claim-src-008-04",
+        "claim-src-011-01",
+        "claim-src-011-02",
+        "claim-src-012-01",
+        "claim-src-012-02",
+        "claim-src-012-03"
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "label": "权益承继安排正式披露",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_execution",
+          "occurred_at": null,
+          "disclosed_at": "2025-01-25",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "权益承继路径已经由正式公告确认，但仍依赖中国船舶吸收合并中国重工实际实施。公告同时说明中国动力控股股东、实际控制人不变；其关于日常经营影响的表述属于公司判断。",
+          "relation_to_previous": null,
+          "conclusion_delta": "第三家公司从同业关联升级为主交易直接影响对象。",
+          "source_ids": [
+            "src-008"
+          ],
+          "claim_ids": [
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04"
+              ],
+              "source_ids": [
+                "src-008"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04"
+              ],
+              "source_ids": [
+                "src-008"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04"
+              ],
+              "source_ids": [
+                "src-008"
+              ]
+            }
+          ],
+          "occurred_at_note": "公告披露的是主合并完成后拟发生的权益承继安排；该版本时主合并尚未实施，因此权益承继尚未实际发生。"
+        },
+        {
+          "version": 2,
+          "label": "权益承继随主合并实施完成",
+          "confirmation_status": "confirmed",
+          "execution_status": "completed",
+          "occurred_at": "2025-09-11",
+          "disclosed_at": "2025-09-12",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国重工终止上市且主合并换股股份完成登记后，中国船舶承继中国重工原持有的中国动力权益；中国动力的控股股东、实际控制人未发生变化。经营和财务影响尚缺少独立量化验证。",
+          "relation_to_previous": "updates",
+          "conclusion_delta": "权益承继由已披露但待主合并实施，更新为随主合并完成而实际完成；确认状态不变，执行状态由pending_execution变为completed。",
+          "source_ids": [
+            "src-008",
+            "src-011",
+            "src-012"
+          ],
+          "claim_ids": [
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+              ],
+              "negative_factors": [
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04",
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-008",
+                "src-011",
+                "src-012"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+              ],
+              "negative_factors": [
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04",
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-008",
+                "src-011",
+                "src-012"
+              ]
+            },
+            {
+              "company_id": "cmp-power",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。",
+                "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。",
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-008-01",
+                "claim-src-008-02",
+                "claim-src-008-03",
+                "claim-src-008-04",
+                "claim-src-011-01",
+                "claim-src-011-02",
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03"
+              ],
+              "source_ids": [
+                "src-008",
+                "src-011",
+                "src-012"
+              ]
+            }
+          ],
+          "occurred_at_note": "以主合并换股股份完成登记作为可验证实施节点；现有材料未提供单独的工商变更登记时间。"
+        }
+      ],
+      "impact_by_company": [
+        {
+          "company_id": "cmp-cssc",
+          "direction": "mixed",
+          "positive_factors": [
+            "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+          ],
+          "negative_factors": [
+            "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03"
+          ],
+          "source_ids": [
+            "src-008",
+            "src-011",
+            "src-012"
+          ]
+        },
+        {
+          "company_id": "cmp-csic",
+          "direction": "mixed",
+          "positive_factors": [
+            "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。"
+          ],
+          "negative_factors": [
+            "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03"
+          ],
+          "source_ids": [
+            "src-008",
+            "src-011",
+            "src-012"
+          ]
+        },
+        {
+          "company_id": "cmp-power",
+          "direction": "unclear",
+          "positive_factors": [],
+          "negative_factors": [],
+          "uncertainties": [
+            "454,731,000股的承继关系及控股股东、实际控制人不变已由中国动力第一手公告确认。公司判断不会对日常经营产生重大影响，但缺少独立量化材料，因此AI仍将净影响标为暂不明确。",
+            "这是换股实施安排而非经营利空；中国重工股东将转为中国船舶股东，但存在换股期间流动性和价格风险。",
+            "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+          ],
+          "confidence": 0.56,
+          "basis_claim_ids": [
+            "claim-src-008-01",
+            "claim-src-008-02",
+            "claim-src-008-03",
+            "claim-src-008-04",
+            "claim-src-011-01",
+            "claim-src-011-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03"
+          ],
+          "source_ids": [
+            "src-008",
+            "src-011",
+            "src-012"
+          ]
+        }
+      ],
+      "confidence": 0.93,
+      "conclusion_delta": "执行状态由待实施更新为已完成；最终实施比例1:0.1339替代预案比例1:0.1335。",
+      "warnings": [
+        "影响方向是基于材料的演示性判断，不是收益预测。",
+        "市场反应仅表示披露附近观察，不能证明事件因果或已完全定价。"
+      ]
+    },
+    {
+      "cluster_id": "cluster-003",
+      "event_id": "evt-aux-power-diesel-acquisition",
+      "event_title": "中国动力拟购中船柴油机16.5136%股权后终止",
+      "company_ids": [
+        "cmp-power",
+        "cmp-cssc"
+      ],
+      "current_conclusion": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回，不能再显示为仍在推进。终止的是资产收购事项，中国动力本身未因此终止上市，目前仍为正常交易状态。",
+      "confirmation_status": "confirmed",
+      "execution_status": "terminated",
+      "relation_to_previous": "supplements",
+      "source_ids": [
+        "src-013",
+        "src-014",
+        "src-018"
+      ],
+      "claim_ids": [
+        "claim-src-013-01",
+        "claim-src-013-02",
+        "claim-src-014-01",
+        "claim-src-014-02",
+        "claim-src-014-03",
+        "claim-src-018-01",
+        "claim-src-018-02"
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "label": "交易筹划并停牌",
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "occurred_at": null,
+          "disclosed_at": "2024-10-26",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国动力正式确认正在筹划发行可转换公司债券及支付现金购买中船柴油机16.5136%股权，交易仍处于筹划阶段并触发停牌。",
+          "relation_to_previous": null,
+          "conclusion_delta": "从待审核直接更新为已终止。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "公司开始筹划交易的实际日期未披露；2024-10-26对外公告，股票自2024-10-28起停牌。"
+        },
+        {
+          "version": 2,
+          "label": "预案披露并复牌",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2024-11-08",
+          "disclosed_at": "2024-11-09",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "董事会审议通过交易预案，股票安排于2024-11-11复牌；交易由筹划进入待审议、待审批阶段，尚未实施。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "交易方案从筹划和停牌阶段进入预案公开阶段，执行状态由planning变为pending_approval，并安排复牌。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "以董事会审议通过交易预案的日期作为该版本发生时间。"
+        },
+        {
+          "version": 3,
+          "label": "交易草案审议并继续推进",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-04-29",
+          "disclosed_at": "2025-04-30",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "交易报告书草案获得董事会审议并披露，标的、交易方式和交易价格等信息进一步明确，但交易仍需后续批准和审核。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "由预案阶段推进至草案阶段，交易信息更完整；确认状态保持confirmed，执行状态仍为pending_approval。",
+          "source_ids": [
+            "src-013",
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-013-01",
+            "claim-src-013-02",
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "提高持股比例和整合度可能正面，但现金/可转债成本、审批与估值风险存在。"
+              ],
+              "negative_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-013-01",
+                "claim-src-013-02",
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-013",
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "提高持股比例和整合度可能正面，但现金/可转债成本、审批与估值风险存在。"
+              ],
+              "negative_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-013-01",
+                "claim-src-013-02",
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-013",
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "以董事会审议通过交易报告书草案的日期作为该版本发生时间。"
+        },
+        {
+          "version": 4,
+          "label": "股东大会审议通过",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-05-23",
+          "disclosed_at": "2025-05-24",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "交易获得中国动力股东大会审议通过，但尚需交易所审核及监管注册等后续程序，不能视为已经实施。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "公司内部决策由董事会草案阶段推进至股东大会通过，外部审核仍未完成。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "以股东大会审议通过本次交易相关议案的日期作为该版本发生时间。"
+        },
+        {
+          "version": 5,
+          "label": "上交所受理申请",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-06-30",
+          "disclosed_at": "2025-07-01",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "上交所已受理交易申请，交易进入审核程序；受理不等于审核通过或交易完成。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "交易由股东大会通过推进至上交所受理，开始外部审核；执行状态仍为pending_approval。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "以交易申请获上海证券交易所受理的日期作为该版本发生时间。"
+        },
+        {
+          "version": 6,
+          "label": "审核中止",
+          "confirmation_status": "confirmed",
+          "execution_status": "pending_approval",
+          "occurred_at": "2025-08-31",
+          "disclosed_at": "2025-09-13",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "因申请文件所引用财务资料有效期届满，上交所中止审核。中止并非审核否决，但交易暂不能继续完成审核。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "审核流程从已受理转为中止，交易推进受阻；尚未终止，因此执行状态仍为pending_approval。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "因财务资料有效期届满，审核自该日起中止；该节点由后续终止公告回溯披露。"
+        },
+        {
+          "version": 7,
+          "label": "交易终止并撤回申请",
+          "confirmation_status": "confirmed",
+          "execution_status": "terminated",
+          "occurred_at": "2025-09-12",
+          "disclosed_at": "2025-09-13",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "购买中船柴油机16.5136%股权的资产收购事项已经终止，相关申请已经撤回。中国动力本身未终止上市，目前仍为正常交易状态。",
+          "relation_to_previous": "supersedes",
+          "conclusion_delta": "交易由审核中止变为公司决定终止并撤回申请，执行状态由pending_approval变为terminated；不能再表示为仍在推进。",
+          "source_ids": [
+            "src-014"
+          ],
+          "claim_ids": [
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-power",
+              "direction": "mixed",
+              "positive_factors": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            },
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-014-01",
+                "claim-src-014-02",
+                "claim-src-014-03"
+              ],
+              "source_ids": [
+                "src-014"
+              ]
+            }
+          ],
+          "occurred_at_note": "以董事会审议通过终止交易并撤回申请的日期作为该版本发生时间。"
+        }
+      ],
+      "impact_by_company": [
+        {
+          "company_id": "cmp-power",
+          "direction": "mixed",
+          "positive_factors": [
+            "提高持股比例和整合度可能正面，但现金/可转债成本、审批与估值风险存在。"
+          ],
+          "negative_factors": [
+            "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-013-01",
+            "claim-src-013-02",
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03",
+            "claim-src-018-01",
+            "claim-src-018-02"
+          ],
+          "source_ids": [
+            "src-013",
+            "src-014",
+            "src-018"
+          ]
+        },
+        {
+          "company_id": "cmp-cssc",
+          "direction": "mixed",
+          "positive_factors": [
+            "提高持股比例和整合度可能正面，但现金/可转债成本、审批与估值风险存在。"
+          ],
+          "negative_factors": [
+            "避免继续承担交易执行成本，但原计划整合收益不再落地；具体净影响无法量化。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-013-01",
+            "claim-src-013-02",
+            "claim-src-014-01",
+            "claim-src-014-02",
+            "claim-src-014-03",
+            "claim-src-018-01",
+            "claim-src-018-02"
+          ],
+          "source_ids": [
+            "src-013",
+            "src-014",
+            "src-018"
+          ]
+        }
+      ],
+      "confidence": 0.98,
+      "conclusion_delta": "新增停牌前价格锚点，不改变辅助事件后来终止的结论。",
+      "warnings": [
+        "影响方向是基于材料的演示性判断，不是收益预测。",
+        "市场反应仅表示披露附近观察，不能证明事件因果或已完全定价。"
+      ]
+    },
+    {
+      "cluster_id": "cluster-004",
+      "event_id": "evt-aux-cssc-noncompete-change",
+      "event_title": "中国船舶集团调整解决同业竞争承诺",
+      "company_ids": [
+        "cmp-cssc",
+        "cmp-csic"
+      ],
+      "current_conclusion": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但沪东中华、黄埔文冲等其他集团资产和业务仍需按调整后的承诺继续安排，因此整体承诺仍在履行中，不能标记为全部完成。",
+      "confirmation_status": "confirmed",
+      "execution_status": "implementing",
+      "relation_to_previous": "supplements",
+      "source_ids": [
+        "src-002",
+        "src-012",
+        "src-015"
+      ],
+      "claim_ids": [
+        "claim-src-002-01",
+        "claim-src-002-02",
+        "claim-src-012-01",
+        "claim-src-012-02",
+        "claim-src-012-03",
+        "claim-src-015-01",
+        "claim-src-015-02"
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "label": "原同业竞争承诺形成",
+          "confirmation_status": "confirmed",
+          "execution_status": "planning",
+          "occurred_at": "2021-06-30",
+          "disclosed_at": "2022-04-29",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国船舶集团承诺在期限内通过资产重组、业务合并等方式解决同业竞争，但当时没有确定具体交易形式和对象。",
+          "relation_to_previous": null,
+          "conclusion_delta": "新增正式承诺和2026年前的期限约束。",
+          "source_ids": [
+            "src-002"
+          ],
+          "claim_ids": [
+            "claim-src-002-01",
+            "claim-src-002-02"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-002-01",
+                "claim-src-002-02"
+              ],
+              "source_ids": [
+                "src-002"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "unclear",
+              "positive_factors": [],
+              "negative_factors": [],
+              "uncertainties": [
+                "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+              ],
+              "confidence": 0.56,
+              "basis_claim_ids": [
+                "claim-src-002-01",
+                "claim-src-002-02"
+              ],
+              "source_ids": [
+                "src-002"
+              ]
+            }
+          ],
+          "occurred_at_note": "以中国船舶集团作出原同业竞争承诺的日期作为发生时间；本数据集现有可追溯来源为后续披露该承诺的2021年年度报告。"
+        },
+        {
+          "version": 2,
+          "label": "承诺调整并明确剩余安排",
+          "confirmation_status": "confirmed",
+          "execution_status": "implementing",
+          "occurred_at": null,
+          "disclosed_at": "2025-01-25",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "拟通过中国船舶吸收合并中国重工处理两者之间的核心同业竞争，同时对沪东中华、黄埔文冲等剩余集团资产和业务设置继续履行的后续安排。",
+          "relation_to_previous": "supplements",
+          "conclusion_delta": "从未确定具体形式的原则性承诺，更新为以主合并处理核心同业竞争并调整剩余事项安排；整体承诺进入实施阶段但尚未全部完成。",
+          "source_ids": [
+            "src-015"
+          ],
+          "claim_ids": [
+            "claim-src-015-01",
+            "claim-src-015-02"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "核心重复业务整合偏正面，但仍存在沪东中华、黄埔文冲等后续承诺执行不确定性。"
+              ],
+              "negative_factors": [
+                "材料同时保留执行、定价或整合风险。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-015-01",
+                "claim-src-015-02"
+              ],
+              "source_ids": [
+                "src-015"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "positive",
+              "positive_factors": [
+                "核心重复业务整合偏正面，但仍存在沪东中华、黄埔文冲等后续承诺执行不确定性。"
+              ],
+              "negative_factors": [],
+              "uncertainties": [],
+              "confidence": 0.82,
+              "basis_claim_ids": [
+                "claim-src-015-01",
+                "claim-src-015-02"
+              ],
+              "source_ids": [
+                "src-015"
+              ]
+            }
+          ],
+          "occurred_at_note": "现有来源确认2025-01-25对外披露承诺调整，但不能独立确定内部决定或调整生效的准确发生时点。"
+        },
+        {
+          "version": 3,
+          "label": "主合并完成、剩余承诺继续履行",
+          "confirmation_status": "confirmed",
+          "execution_status": "implementing",
+          "occurred_at": "2025-09-11",
+          "disclosed_at": "2025-09-12",
+          "analysis_updated_at": "2026-10-05T16:28:01+08:00",
+          "conclusion": "中国船舶与中国重工之间的核心同业竞争随主合并得到处理，但其他集团资产和业务仍需按调整后的承诺继续安排，不能表述为全部同业竞争已经彻底解决。",
+          "relation_to_previous": "supplements",
+          "conclusion_delta": "主合并由拟实施变为已完成，核心同业竞争处理取得实施结果；剩余承诺继续履行，整体执行状态保持implementing。",
+          "source_ids": [
+            "src-012",
+            "src-015"
+          ],
+          "claim_ids": [
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-015-01",
+            "claim-src-015-02"
+          ],
+          "impact_by_company": [
+            {
+              "company_id": "cmp-cssc",
+              "direction": "mixed",
+              "positive_factors": [
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "negative_factors": [
+                "核心重复业务整合偏正面，但仍存在沪东中华、黄埔文冲等后续承诺执行不确定性。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03",
+                "claim-src-015-01",
+                "claim-src-015-02"
+              ],
+              "source_ids": [
+                "src-012",
+                "src-015"
+              ]
+            },
+            {
+              "company_id": "cmp-csic",
+              "direction": "mixed",
+              "positive_factors": [
+                "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+              ],
+              "negative_factors": [
+                "核心重复业务整合偏正面，但仍存在沪东中华、黄埔文冲等后续承诺执行不确定性。"
+              ],
+              "uncertainties": [
+                "正负因素并存，不能合并为单一方向。"
+              ],
+              "confidence": 0.78,
+              "basis_claim_ids": [
+                "claim-src-012-01",
+                "claim-src-012-02",
+                "claim-src-012-03",
+                "claim-src-015-01",
+                "claim-src-015-02"
+              ],
+              "source_ids": [
+                "src-012",
+                "src-015"
+              ]
+            }
+          ],
+          "occurred_at_note": "以主合并换股股份完成登记作为中国船舶与中国重工核心同业竞争处理完成的可验证节点。"
+        }
+      ],
+      "impact_by_company": [
+        {
+          "company_id": "cmp-cssc",
+          "direction": "mixed",
+          "positive_factors": [
+            "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+          ],
+          "negative_factors": [
+            "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-002-01",
+            "claim-src-002-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-015-01",
+            "claim-src-015-02"
+          ],
+          "source_ids": [
+            "src-002",
+            "src-012",
+            "src-015"
+          ]
+        },
+        {
+          "company_id": "cmp-csic",
+          "direction": "mixed",
+          "positive_factors": [
+            "承诺提供整合方向，但对价、资产范围和股东摊薄均未知。"
+          ],
+          "negative_factors": [
+            "完成消除交易失败风险，但存续公司承担整合与新增股份摊薄；原中国重工股东获得存续公司股份；中国动力经营影响尚无量化证据。"
+          ],
+          "uncertainties": [
+            "正负因素并存，不能合并为单一方向。"
+          ],
+          "confidence": 0.78,
+          "basis_claim_ids": [
+            "claim-src-002-01",
+            "claim-src-002-02",
+            "claim-src-012-01",
+            "claim-src-012-02",
+            "claim-src-012-03",
+            "claim-src-015-01",
+            "claim-src-015-02"
+          ],
+          "source_ids": [
+            "src-002",
+            "src-012",
+            "src-015"
+          ]
+        }
+      ],
+      "confidence": 0.87,
+      "conclusion_delta": "将“彻底解决同业竞争”的过强说法更正为“解决核心冲突、仍有剩余事项”。",
+      "warnings": [
+        "影响方向是基于材料的演示性判断，不是收益预测。",
+        "市场反应仅表示披露附近观察，不能证明事件因果或已完全定价。"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "claim-src-001-01",
+      "text": "南北船合并在业界流传多年。",
+      "claim_type": "rumor",
+      "source_ids": [
+        "src-001"
+      ],
+      "basis_claim_ids": [],
+      "verification": "由新闻回溯确认存在该市场叙事，但无法确定最初传播时间和首发者。"
+    },
+    {
+      "claim_id": "claim-src-001-02",
+      "text": "2019年7月1日八家上市公司确认两集团筹划战略性重组，方案未定。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-001"
+      ],
+      "basis_claim_ids": [],
+      "verification": "多家公司公告所述，新闻列出八家公司。"
+    },
+    {
+      "claim_id": "claim-src-001-03",
+      "text": "集团重组将进一步发展为中国船舶吸并中国重工。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-001"
+      ],
+      "basis_claim_ids": [],
+      "verification": "2019年当时未获公司确认，后续事实与推测方向一致，但不能倒推当时已确定。"
+    },
+    {
+      "claim_id": "claim-src-002-01",
+      "text": "中国船舶集团承诺在2021年6月30日起五年内解决同业竞争。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-002"
+      ],
+      "basis_claim_ids": [],
+      "verification": "上市公司年度报告披露。"
+    },
+    {
+      "claim_id": "claim-src-002-02",
+      "text": "解决方式可能包括资产重组、股权置换、业务合并等。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-002"
+      ],
+      "basis_claim_ids": [],
+      "verification": "承诺函列举多种可选方式，未锁定吸并。"
+    },
+    {
+      "claim_id": "claim-src-003-01",
+      "text": "中国船舶拟换股吸收合并中国重工。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-003"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司公告。"
+    },
+    {
+      "claim_id": "claim-src-003-02",
+      "text": "两股自2024年9月3日停牌。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-003"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司公告与后续报告书一致。"
+    },
+    {
+      "claim_id": "claim-src-003-03",
+      "text": "交易必然完成。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-003"
+      ],
+      "basis_claim_ids": [],
+      "verification": "当时缺乏方案与审批，不能成立。"
+    },
+    {
+      "claim_id": "claim-src-004-01",
+      "text": "合并后按静态数据新接订单和手持订单将居全球上市船企第一。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-004"
+      ],
+      "basis_claim_ids": [],
+      "verification": "基于披露与行业数据的静态合并测算，不等同于实现协同。"
+    },
+    {
+      "claim_id": "claim-src-004-02",
+      "text": "中船系板块两日盘中累计最大涨幅超过10%。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-004"
+      ],
+      "basis_claim_ids": [],
+      "verification": "媒体对同期行情的观测。"
+    },
+    {
+      "claim_id": "claim-src-004-03",
+      "text": "事件对相关上市公司的影响可能偏短期并出现分化。",
+      "claim_type": "opinion",
+      "source_ids": [
+        "src-004"
+      ],
+      "basis_claim_ids": [],
+      "verification": "国融证券投顾观点。"
+    },
+    {
+      "claim_id": "claim-src-005-01",
+      "text": "合并有望减少同业竞争并提升技术、供应链和运营协同。",
+      "claim_type": "opinion",
+      "source_ids": [
+        "src-005"
+      ],
+      "basis_claim_ids": [],
+      "verification": "开源证券研报观点，属于前瞻判断。"
+    },
+    {
+      "claim_id": "claim-src-005-02",
+      "text": "合并会实现1+1大于2。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-005"
+      ],
+      "basis_claim_ids": [],
+      "verification": "尚无合并后经营数据，不能作为事实。"
+    },
+    {
+      "claim_id": "claim-src-006-01",
+      "text": "董事会审议通过重组方案和预案。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-006"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司复牌公告。"
+    },
+    {
+      "claim_id": "claim-src-006-02",
+      "text": "股票于2024年9月19日复牌。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-006"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司公告。"
+    },
+    {
+      "claim_id": "claim-src-007-01",
+      "text": "预案换股比例为1股中国重工换0.1335股中国船舶。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-007"
+      ],
+      "basis_claim_ids": [],
+      "verification": "预案及新闻对公告的复核。"
+    },
+    {
+      "claim_id": "claim-src-007-02",
+      "text": "复牌早盘两股高开后回落。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-007"
+      ],
+      "basis_claim_ids": [],
+      "verification": "盘中行情观测。"
+    },
+    {
+      "claim_id": "claim-src-007-03",
+      "text": "高开回落证明交易价值为负。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-007"
+      ],
+      "basis_claim_ids": [],
+      "verification": "不能成立；短期价格受定价、预期兑现和大盘等多因素影响。"
+    },
+    {
+      "claim_id": "claim-src-008-01",
+      "text": "中国重工原直接持有中国动力454,731,000股。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-008"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国动力公告第1页重要内容提示及第3页权益变动表。"
+    },
+    {
+      "claim_id": "claim-src-008-02",
+      "text": "合并完成后，454,731,000股由中国船舶承继，中国重工不再持有中国动力股份。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-008"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国动力《关于股东权益变动的提示性公告》第1页及第3页。"
+    },
+    {
+      "claim_id": "claim-src-008-03",
+      "text": "中国动力控股股东、实际控制人不发生变化。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-008"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国动力公告第1页重要内容提示。"
+    },
+    {
+      "claim_id": "claim-src-008-04",
+      "text": "该权益变化不会对中国动力日常生产经营产生重大影响。",
+      "claim_type": "opinion",
+      "source_ids": [
+        "src-008"
+      ],
+      "basis_claim_ids": [],
+      "verification": "这是中国动力在提示性公告中的公司判断；当前材料没有提供独立量化测算。"
+    },
+    {
+      "claim_id": "claim-src-009-01",
+      "text": "交易方案、风险、股价异动核查和整合安排已形成完整报告书。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-009"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司向上交所披露的交易报告书。"
+    },
+    {
+      "claim_id": "claim-src-009-02",
+      "text": "剔除大盘和行业因素后，中国重工首次公告前20个交易日累计波动未超过20%。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-009"
+      ],
+      "basis_claim_ids": [],
+      "verification": "报告书的监管口径核查。"
+    },
+    {
+      "claim_id": "claim-src-010-01",
+      "text": "中国证监会同意吸收合并注册。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-010"
+      ],
+      "basis_claim_ids": [],
+      "verification": "证监会批复。"
+    },
+    {
+      "claim_id": "claim-src-011-01",
+      "text": "中国重工自2025年9月5日起终止上市。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-011"
+      ],
+      "basis_claim_ids": [],
+      "verification": "上交所终止上市决定。"
+    },
+    {
+      "claim_id": "claim-src-011-02",
+      "text": "终止上市原因为被吸收合并后不再具有独立主体资格。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-011"
+      ],
+      "basis_claim_ids": [],
+      "verification": "上交所公告。"
+    },
+    {
+      "claim_id": "claim-src-012-01",
+      "text": "换股已于2025年9月11日完成股份登记。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-012"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国结算证券变更登记证明由公告披露。"
+    },
+    {
+      "claim_id": "claim-src-012-02",
+      "text": "最终换股比例为1:0.1339，新增股份于9月16日上市。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-012"
+      ],
+      "basis_claim_ids": [],
+      "verification": "实施结果公告。"
+    },
+    {
+      "claim_id": "claim-src-012-03",
+      "text": "预案比例0.1335已被最终0.1339替代。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-012"
+      ],
+      "basis_claim_ids": [],
+      "verification": "两版公告对比。"
+    },
+    {
+      "claim_id": "claim-src-013-01",
+      "text": "中国动力拟购买中船柴油机16.5136%股权，作价381,428.40万元。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-013"
+      ],
+      "basis_claim_ids": [],
+      "verification": "交易报告书草案。"
+    },
+    {
+      "claim_id": "claim-src-013-02",
+      "text": "收购将强化动力业务整合。",
+      "claim_type": "opinion",
+      "source_ids": [
+        "src-013"
+      ],
+      "basis_claim_ids": [],
+      "verification": "交易逻辑，尚待完成后经营数据验证。"
+    },
+    {
+      "claim_id": "claim-src-014-01",
+      "text": "中国动力于2025年9月12日决定终止交易并撤回申请。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-014"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司公告。"
+    },
+    {
+      "claim_id": "claim-src-014-02",
+      "text": "终止原因是外部环境及有关情况变化并拟优化方案。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-014"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司表述较概括，具体变化未披露。"
+    },
+    {
+      "claim_id": "claim-src-014-03",
+      "text": "终止不会对公司造成重大不利影响。",
+      "claim_type": "opinion",
+      "source_ids": [
+        "src-014"
+      ],
+      "basis_claim_ids": [],
+      "verification": "公司判断；需以后续财务与经营数据验证。"
+    },
+    {
+      "claim_id": "claim-src-015-01",
+      "text": "主合并将消除中国船舶与中国重工间的核心同业竞争。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-015"
+      ],
+      "basis_claim_ids": [],
+      "verification": "交易目的及承诺变更依据；完全效果仍需整合后验证。"
+    },
+    {
+      "claim_id": "claim-src-015-02",
+      "text": "剩余同业竞争事项另设解决期限。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-015"
+      ],
+      "basis_claim_ids": [],
+      "verification": "承诺变更公告。"
+    },
+    {
+      "claim_id": "claim-src-016-01",
+      "text": "2025年8月12日是中国重工最后一个交易日。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-016"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国重工临2025-053公告的重要内容提示。"
+    },
+    {
+      "claim_id": "claim-src-016-02",
+      "text": "中国重工自2025年8月13日起连续停牌、不再交易，直至终止上市。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-016"
+      ],
+      "basis_claim_ids": [],
+      "verification": "中国重工临2025-053公告。"
+    },
+    {
+      "claim_id": "claim-src-016-03",
+      "text": "连续停牌意味着当日已经终止上市。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-016"
+      ],
+      "basis_claim_ids": [],
+      "verification": "不成立；停牌和终止上市是两个不同状态，终止上市自2025年9月5日起生效。"
+    },
+    {
+      "claim_id": "claim-src-017-01",
+      "text": "中国重工在连续停牌前最后一个交易日2025年8月12日收盘为5.10元。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-017"
+      ],
+      "basis_claim_ids": [],
+      "verification": "Investing.com历史行情表；最后交易日日期另由src-016第一手公告确认。"
+    },
+    {
+      "claim_id": "claim-src-017-02",
+      "text": "5.10元收盘价证明吸收合并对股东有利。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-017"
+      ],
+      "basis_claim_ids": [],
+      "verification": "不成立；单日价格不能证明交易价值或因果关系。"
+    },
+    {
+      "claim_id": "claim-src-018-01",
+      "text": "中国动力在辅助重组停牌前最后一个交易日2024年10月25日收盘为23.56元。",
+      "claim_type": "fact",
+      "source_ids": [
+        "src-018"
+      ],
+      "basis_claim_ids": [],
+      "verification": "交易独立财务顾问核查文件明确列示日期和收盘价。"
+    },
+    {
+      "claim_id": "claim-src-018-02",
+      "text": "23.56元可以证明辅助重组将完成。",
+      "claim_type": "inference",
+      "source_ids": [
+        "src-018"
+      ],
+      "basis_claim_ids": [],
+      "verification": "不成立；停牌前价格与交易最终是否完成不存在证明关系，该交易后续已终止。"
+    }
+  ],
+  "warnings": [
+    "本响应由已封板材料整理为保存的AI分析运行产物，未调用在线模型。",
+    "iFinD与扶摇在本次采集环境不可用。",
+    "行情变化不证明事件因果，分析不构成投资建议。"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.1.0",
+  "generated_at": "2026-10-05T15:55:00+08:00",
+  "trading_status_history_scope": "仅覆盖本演示数据中的主事件和辅助事件相关状态变化，不代表公司上市以来的完整停复牌历史。",
+  "trading_status_taxonomy": ["normal_trading", "suspended", "resumed", "delisted"],
+  "companies": [
+    {
+      "company_id": "cmp-cssc",
+      "name": "中国船舶工业股份有限公司",
+      "short_name": "中国船舶",
+      "ticker": "600150",
+      "exchange": "SSE",
+      "listing_status": "listed",
+      "current_trading_status": "normal_trading",
+      "aliases": ["中国船舶", "CSSC上市平台", "吸并方", "存续公司"],
+      "role_in_main_event": "吸并方、换股发行方和合并后的存续上市公司",
+      "trading_status_history": [
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-09-02",
+          "effective_to": "2024-09-02",
+          "reason": "主事件首次公告前最后一个交易日。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-003"]
+        },
+        {
+          "status": "suspended",
+          "effective_from": "2024-09-03",
+          "effective_to": "2024-09-18",
+          "reason": "筹划换股吸收合并中国重工并编制交易预案。",
+          "last_traded_at": "2024-09-02",
+          "last_close": 34.9,
+          "currency": "CNY",
+          "market_observation_id": "mktobs-cssc-resumption-20240919",
+          "price_source_ids": ["src-009"],
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-003", "src-007"]
+        },
+        {
+          "status": "resumed",
+          "effective_from": "2024-09-19",
+          "effective_to": "2024-09-19",
+          "reason": "重组预案披露后复牌。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-007"]
+        },
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-09-19",
+          "effective_to": null,
+          "reason": "复牌后保持上市交易；本材料未记录其后与演示事件无关的短暂停牌。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-007", "src-012"]
+        }
+      ]
+    },
+    {
+      "company_id": "cmp-csic",
+      "name": "中国船舶重工股份有限公司",
+      "short_name": "中国重工",
+      "ticker": "601989",
+      "exchange": "SSE",
+      "listing_status": "delisted_after_merger",
+      "delisted_at": "2025-09-05",
+      "current_trading_status": "delisted",
+      "aliases": ["中国重工", "CSIC上市平台", "被吸并方"],
+      "role_in_main_event": "被吸并方；终止上市后，其资产、负债、业务、人员、合同和权利义务由中国船舶承继",
+      "trading_status_history": [
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-09-02",
+          "effective_to": "2024-09-02",
+          "reason": "主事件首次公告前最后一个交易日。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-003"]
+        },
+        {
+          "status": "suspended",
+          "effective_from": "2024-09-03",
+          "effective_to": "2024-09-18",
+          "reason": "筹划由中国船舶换股吸收合并并编制交易预案。",
+          "last_traded_at": "2024-09-02",
+          "last_close": 4.98,
+          "currency": "CNY",
+          "market_observation_id": "mktobs-csic-resumption-20240919",
+          "price_source_ids": ["src-009"],
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-003", "src-006"]
+        },
+        {
+          "status": "resumed",
+          "effective_from": "2024-09-19",
+          "effective_to": "2024-09-19",
+          "reason": "重组预案披露后复牌。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-006", "src-007"]
+        },
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-09-19",
+          "effective_to": "2025-08-12",
+          "reason": "复牌后正常交易，2025-08-12为连续停牌前最后一个交易日。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-007", "src-016"]
+        },
+        {
+          "status": "suspended",
+          "effective_from": "2025-08-13",
+          "effective_to": "2025-09-04",
+          "reason": "进入异议股东现金选择权、清算交收和换股实施阶段，股票连续停牌且不再交易，直至终止上市。",
+          "last_traded_at": "2025-08-12",
+          "last_close": 5.1,
+          "currency": "CNY",
+          "market_observation_id": null,
+          "price_source_ids": ["src-017"],
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-016", "src-011"]
+        },
+        {
+          "status": "delisted",
+          "effective_from": "2025-09-05",
+          "effective_to": null,
+          "reason": "因被中国船舶吸收合并、不再具有独立主体资格而终止上市。",
+          "event_ids": ["evt-main-cssc-csic-merger"],
+          "source_ids": ["src-011", "src-012"]
+        }
+      ]
+    },
+    {
+      "company_id": "cmp-power",
+      "name": "中国船舶重工集团动力股份有限公司",
+      "short_name": "中国动力",
+      "ticker": "600482",
+      "exchange": "SSE",
+      "listing_status": "listed",
+      "current_trading_status": "normal_trading",
+      "aliases": ["中国动力", "中船动力上市平台"],
+      "role_in_main_event": "中国重工直接持股的上市公司；主合并导致其直接股东权益由中国重工转由中国船舶承继",
+      "trading_status_history": [
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-10-25",
+          "effective_to": "2024-10-25",
+          "reason": "辅助重组停牌前最后一个交易日。",
+          "event_ids": ["evt-aux-power-diesel-acquisition"],
+          "source_ids": ["src-014"]
+        },
+        {
+          "status": "suspended",
+          "effective_from": "2024-10-28",
+          "effective_to": "2024-11-10",
+          "reason": "筹划发行可转换公司债券及支付现金购买中船柴油机16.5136%股权。",
+          "last_traded_at": "2024-10-25",
+          "last_close": 23.56,
+          "currency": "CNY",
+          "market_observation_id": null,
+          "price_source_ids": ["src-018"],
+          "event_ids": ["evt-aux-power-diesel-acquisition"],
+          "source_ids": ["src-014"]
+        },
+        {
+          "status": "resumed",
+          "effective_from": "2024-11-11",
+          "effective_to": "2024-11-11",
+          "reason": "辅助重组预案披露后复牌。",
+          "event_ids": ["evt-aux-power-diesel-acquisition"],
+          "source_ids": ["src-014"]
+        },
+        {
+          "status": "normal_trading",
+          "effective_from": "2024-11-11",
+          "effective_to": null,
+          "reason": "复牌后保持上市交易；辅助交易后于2025-09终止，但公司股票未因此终止上市。",
+          "event_ids": ["evt-aux-power-diesel-acquisition", "evt-main-cssc-csic-merger"],
+          "source_ids": ["src-014", "src-008"]
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from_company_id": "cmp-cssc",
+      "to_company_id": "cmp-csic",
+      "type": "stock_swap_absorption_merger",
+      "description": "中国船舶以换股方式吸收合并中国重工，中国船舶存续、中国重工终止上市并注销法人资格。"
+    },
+    {
+      "from_company_id": "cmp-csic",
+      "to_company_id": "cmp-power",
+      "type": "direct_shareholding_before_merger",
+      "description": "中国重工在合并前直接持有中国动力股份；主合并触发中国动力权益变动披露。"
+    },
+    {
+      "from_company_id": "cmp-cssc",
+      "to_company_id": "cmp-power",
+      "type": "rights_succession_after_merger",
+      "description": "主合并完成后，中国船舶承继中国重工持有的中国动力权益。"
+    },
+    {
+      "from_company_id": "cmp-cssc",
+      "to_company_id": "cmp-power",
+      "type": "common_controller",
+      "description": "三家公司均处于中国船舶集团体系，实际控制人均为国务院国资委；主合并不改变实际控制人。"
+    }
+  ],
+  "selection_reason": "三家公司并非随机同业：中国船舶和中国重工是换股吸收合并双方，中国动力是中国重工直接持股的集团内上市公司，主合并会实际改变其直接权益承继关系。该组合同时覆盖存续方、消失方和被穿透影响的第三方上市公司。"
+}

@@ -1,0 +1,188 @@
+{
+  "run_id": "material-analysis-001",
+  "source_count": 18,
+  "canonical_source_count": 11,
+  "exact_duplicate_groups": [],
+  "near_duplicate_groups": [],
+  "source_records": [
+    {
+      "source_id": "src-001",
+      "canonical_source_id": "src-001",
+      "normalized_url": "https://news.sina.com.cn/c/2019-07-02/doc-ihytcitk9082006.shtml",
+      "content_hash": "fnv1a-41231078",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-002",
+      "canonical_source_id": "src-002",
+      "normalized_url": "https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=8155659",
+      "content_hash": "fnv1a-d54bca31",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-003",
+      "canonical_source_id": "src-003",
+      "normalized_url": "https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=10487968",
+      "content_hash": "fnv1a-f8d33c3c",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-004",
+      "canonical_source_id": "src-004",
+      "normalized_url": "https://www.yicai.com/news/102259573.html",
+      "content_hash": "fnv1a-b0bafbc6",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-005",
+      "canonical_source_id": "src-005",
+      "normalized_url": "https://www.cnenergynews.cn/jinrong/2024/09/09/detail_20240909175474.html",
+      "content_hash": "fnv1a-87aef103",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-006",
+      "canonical_source_id": "src-006",
+      "normalized_url": "https://money.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=10487987&stockid=601989",
+      "content_hash": "fnv1a-42d3cd7a",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-007",
+      "canonical_source_id": "src-007",
+      "normalized_url": "https://www.yicai.com/news/102278604.html",
+      "content_hash": "fnv1a-ffcc40eb",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-008",
+      "canonical_source_id": "src-008",
+      "normalized_url": "https://static.cninfo.com.cn/finalpage/2025-01-25/1222431584.pdf",
+      "content_hash": "fnv1a-99fc6191",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-009",
+      "canonical_source_id": "src-009",
+      "normalized_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202505/600150_20250508_rhrn.pdf",
+      "content_hash": "fnv1a-3f1c459e",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-010",
+      "canonical_source_id": "src-010",
+      "normalized_url": "https://www.csrc.gov.cn/csrc/c106395/c7572058/content.shtml",
+      "content_hash": "fnv1a-f0823fba",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-011",
+      "canonical_source_id": "src-011",
+      "normalized_url": "https://www.sse.com.cn/disclosure/announcement/listing/stock/c/c_20250829_10790128.shtml",
+      "content_hash": "fnv1a-b7adbcc3",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-012",
+      "canonical_source_id": "src-012",
+      "normalized_url": "https://money.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=11449989&stockid=600150",
+      "content_hash": "fnv1a-7d4ebd00",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-013",
+      "canonical_source_id": "src-013",
+      "normalized_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202506/600482_20250630_k0fs.pdf",
+      "content_hash": "fnv1a-3813e196",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-014",
+      "canonical_source_id": "src-014",
+      "normalized_url": "https://vip.stock.finance.sina.com.cn/corp/view/vcb_allbulletindetail.php?id=11454965",
+      "content_hash": "fnv1a-dd6f85c7",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-015",
+      "canonical_source_id": "src-015",
+      "normalized_url": "https://stock.stockstar.com/an2025012500002044.shtml",
+      "content_hash": "fnv1a-a46710f3",
+      "evidence_weight": 0,
+      "fold_reason": "reprint_or_mirror",
+      "traceable": true
+    },
+    {
+      "source_id": "src-016",
+      "canonical_source_id": "src-016",
+      "normalized_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2025-08-09/601989_20250809_7oo5.pdf",
+      "content_hash": "fnv1a-77d1d883",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-017",
+      "canonical_source_id": "src-017",
+      "normalized_url": "https://cn.investing.com/equities/cn-shipbuildin-historical-data",
+      "content_hash": "fnv1a-56195375",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    },
+    {
+      "source_id": "src-018",
+      "canonical_source_id": "src-018",
+      "normalized_url": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223425967.pdf",
+      "content_hash": "fnv1a-33ded0d8",
+      "evidence_weight": 1,
+      "fold_reason": "canonical",
+      "traceable": true
+    }
+  ],
+  "rules": {
+    "exact": [
+      "document_id",
+      "normalized_url",
+      "content_hash",
+      "publisher_title_published_at"
+    ],
+    "near_duplicate": [
+      "title_similarity",
+      "normalized_text_similarity",
+      "original_source",
+      "published_time_distance",
+      "is_reprint"
+    ],
+    "evidence_weight_rule": "精确副本、转载和镜像保留追溯记录，但不重复增加证据权重"
+  },
+  "elapsed_ms": 4
+}

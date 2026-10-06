@@ -1,0 +1,23 @@
+{
+  "run_id": "material-analysis-001",
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "confirmed、completed与市场已经完全定价是三个独立概念。",
+    "suspended是交易状态，不是negative影响方向。",
+    "行情变化只作观察，不证明事件因果。"
+  ],
+  "validated_at": "2026-10-05T16:28:01+08:00",
+  "rejected_fields": [],
+  "applicable_event_count": 4,
+  "checks": {
+    "json_schema_shape": "passed",
+    "reference_integrity": "passed",
+    "enum_integrity": "passed",
+    "time_integrity": "passed",
+    "price_field_guard": "passed",
+    "fact_confirmation_guard": "passed",
+    "state_separation": "passed"
+  },
+  "elapsed_ms": 3
+}
