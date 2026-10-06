@@ -42,7 +42,12 @@
 - 红色利多、绿色利空、红绿双色混合、银白暂不明确。
 - 公司、事件和版本节点的鼠标悬停、键盘聚焦及关联链高亮。
 - 只读“查看分析过程”面板，展示七步 Demo 分析链路。
+- 事件详情抽屉：概览、完整版本演化、证据与冲突、逐公司影响与市场反应、AI 分析记录。
+- 通知中心：15 条真实相邻版本变化、快照过滤、已读状态和通知到事件版本的定位。
+- 否认、更正、过期规则样例与真实事件隔离，不进入真实事件数、来源数或通知数。
+- 游离、托举、靠近、稳定融合、冷却/断开五种确定性液态关系形态。
 - 本地可重复生成的保存运行产物、结构校验和 VisualModelBuilder。
+- `SavedAnalysisProvider` 与禁用状态的 `OnlineAnalysisProvider` 共用统一接口；默认演示完全离线且不需要 API Key。
 - `prefers-reduced-motion` 支持。
 
 ## 三个演化快照
@@ -80,7 +85,7 @@
 - 计权证据：11
 - 事件簇：4
 - 主张：44
-- 运行产物：8 份 JSON
+- 运行产物：9 份 JSON（8 份核心分析产物及 1 份确定性派生通知产物）
 
 当前运行没有调用真实爬虫、外部采集 Agent、iFinD 或扶摇，也没有进行在线模型调用。AI 分析使用保存的运行产物。
 
@@ -167,6 +172,9 @@ apps/event-intelligence-web/
     App.tsx                       # 三快照首页与交互
     dataAdapter.ts               # 原始材料 + visual-result ViewModel
     AnalysisProcessPanel.tsx      # 七步只读分析过程
+    EventDetailDrawer.tsx         # 可追溯事件详情
+    NotificationCenter.tsx        # 版本变化与站内通知
+    RelationLayer.tsx             # 五种液态关系形态
     analysisRunAdapter.ts         # 运行产物到面板的适配
     pipeline/
       deduplicateSources.ts
@@ -190,8 +198,10 @@ data/demo-runs/material-analysis-001/
   analysis-response.json
   validation-result.json
   visual-result.json
+  notifications.json
 
 docs/
+  AI_PROVIDER_INTERFACE.md
   AI_USAGE_AND_VALIDATION.md
   event-intelligence-demo-script.md
 
@@ -219,7 +229,7 @@ npm run dev --workspace @event-intelligence/web -- --host 127.0.0.1 --port 5174
 
 ## 重新生成分析产物、测试与构建
 
-重新生成 8 份分析产物：
+重新生成 9 份运行产物（8 份核心分析产物及 1 份派生通知产物）：
 
 ```bash
 npm run pipeline:generate --workspace @event-intelligence/web
@@ -243,7 +253,7 @@ npm run build --workspace @event-intelligence/web
 - `typecheck`：通过；
 - `test`：8 个测试文件、60 项测试全部通过；
 - `build`：通过，且构建期间再次成功生成 9 份运行产物；
-- 浏览器检查：在 1440×900 和 1366×768 检查三个快照、分析面板、事件详情、通知中心、AI分析记录、液态关系、横向溢出和控制台错误。
+- 浏览器检查：在 1440×900 和 1366×768 检查三个快照、分析面板、事件详情、通知中心、AI 分析记录、液态关系和横向溢出；公网部署页面实际加载正常，控制台无错误或警告。
 
 测试覆盖来源数量、精确重复计权、转载追溯、4 个事件簇、轮廓系数用途、引用解析、非法枚举、AI 行情字段、`mixed`/`unclear`、逐公司不同方向、校验失败阻断、三个快照、详情、通知、五种关系视觉，以及统一 Provider、固定请求、显式回退和密钥不落盘。
 
@@ -272,9 +282,9 @@ npm run build --workspace @event-intelligence/web
 - 公司详情页；
 - 邮件、短信或浏览器推送；
 - 后台任务和实时行情；
-- 移动端；
+- 移动端。
 
-第四至第七阶段已经执行；独立仓库与公网部署已经完成，演示视频仍待生成。
+第一至第七阶段已经执行；独立仓库、GitHub Actions 与公网部署已经完成。演示视频仍待生成，当前仓库只保留脚本和目标路径，不声称 MP4 已完成。
 
 ## 投资与合规声明
 
