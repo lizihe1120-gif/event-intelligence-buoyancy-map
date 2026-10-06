@@ -213,7 +213,9 @@ npm run dev --workspace @event-intelligence/web -- --host 127.0.0.1 --port 5174
 
 访问：`http://127.0.0.1:5174/`
 
-部署状态：**尚未部署**。当前没有公网 URL。
+公网演示：[https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/](https://lizihe1120-gif.github.io/event-intelligence-buoyancy-map/)
+
+部署方式：GitHub Pages + GitHub Actions；工作流会在发布前重新执行类型检查、测试和生产构建。
 
 ## 重新生成分析产物、测试与构建
 
@@ -271,9 +273,8 @@ npm run build --workspace @event-intelligence/web
 - 邮件、短信或浏览器推送；
 - 后台任务和实时行情；
 - 移动端；
-- 公网部署。
 
-第四至第七阶段已经执行；第八阶段的独立仓库、公网部署、最终提交包和最终验收仍未执行。
+第四至第七阶段已经执行；独立仓库与公网部署已经完成，演示视频仍待生成。
 
 ## 投资与合规声明
 
