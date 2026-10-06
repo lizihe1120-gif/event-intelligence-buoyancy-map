@@ -8,7 +8,7 @@
     "jsx": "react-jsx",
     "noEmit": true,
     "tsBuildInfoFile": "dist/.tsbuildinfo",
-    "types": ["vite/client", "vitest/globals"]
+    "types": ["node", "vite/client", "vitest/globals"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts", "vite.pipeline.config.ts", "vitest.config.ts"]
 }
